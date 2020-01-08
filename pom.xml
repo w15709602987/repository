@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>testSSMStepByStep</groupId>
@@ -27,6 +27,17 @@
       <scope>test</scope>
     </dependency>
 
+
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-context</artifactId>
+      <version>4.1.7.RELEASE</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-webmvc</artifactId>
+      <version>5.0.4.RELEASE</version>
+    </dependency>
 
 
   </dependencies>
@@ -71,7 +82,7 @@
           <configuration>
             <!--端口控制-->
             <port>8080</port>
-            <!--项目路径控制意味着http://localhost:8080/abc-->
+            <!--项目路径控制意味着http://localhost:8080/xxx-->
             <path>/testSSMStepByStep</path>
             <!--编码-->
             <uriEncoding>UTF-8</uriEncoding>
