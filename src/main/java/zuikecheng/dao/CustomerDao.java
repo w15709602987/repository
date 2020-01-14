@@ -6,8 +6,7 @@ import java.sql.Date;
 
 @Repository
 public class CustomerDao {
-    public Customer findCustomer() {
-        Customer customer = new Customer();
+    public Customer findCustomer(Customer customer) {
         customer.setId(1);
         customer.setCustomername("wei");
         customer.setCompanyname("123");

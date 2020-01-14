@@ -1,7 +1,7 @@
 package zuikecheng.bean;
 
-import java.sql.Date;
 
+import java.sql.Date;
 public class Customer {
     private int id;
     private String customername;

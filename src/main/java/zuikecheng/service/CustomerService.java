@@ -9,8 +9,10 @@ import org.springframework.stereotype.Service;
 public class CustomerService {
     @Autowired
     CustomerDao customerDao;
-    public Customer getCustomer() {
-        return customerDao.findCustomer();
+
+
+    public Customer getCustomer(Customer customer) {
+        return customerDao.findCustomer(customer);
     }
 
 

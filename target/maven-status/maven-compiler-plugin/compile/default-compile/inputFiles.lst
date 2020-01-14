@@ -1,4 +1,4 @@
-D:\testSSMStepByStep\src\main\java\controller\IndexController.java
-D:\testSSMStepByStep\src\main\java\dao\CustomerDao.java
-D:\testSSMStepByStep\src\main\java\service\CustomerService.java
-D:\testSSMStepByStep\src\main\java\bean\Customer.java
+D:\testSSMStepByStep\src\main\java\zuikecheng\bean\Customer.java
+D:\testSSMStepByStep\src\main\java\zuikecheng\dao\CustomerDao.java
+D:\testSSMStepByStep\src\main\java\zuikecheng\service\CustomerService.java
+D:\testSSMStepByStep\src\main\java\zuikecheng\controller\IndexController.java
