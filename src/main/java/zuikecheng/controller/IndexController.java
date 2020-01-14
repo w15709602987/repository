@@ -15,8 +15,8 @@ import java.io.IOException;
 
 @Controller
 public class IndexController {
-//    @Autowired
-//    CustomerService customerService;
+    @Autowired
+    CustomerService customerService;
 //    @RequestMapping("/index")
 //        public ModelAndView getCustomers(ModelAndView mav){
 //         mav.setViewName("index");
@@ -25,17 +25,29 @@ public class IndexController {
 //         mav.addObject("index","123");
 //         return mav;
 //    }
-   @RequestMapping("uu")
+@RequestMapping("uu")
 public void getCustomers(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 //       System.out.println("进来了");
-//       Customer customer = new Customer();
-//       customer = customerService.getCustomer(customer);
-//       request.getSession().setAttribute("customer",customer);
-//       request.getRequestDispatcher("index.jsp").forward(request,response);
-       request.getSession().setAttribute("abc","123");
-       request.getRequestDispatcher("123.jsp").forward(request,response);
-//    mav.setViewName("123.jsp");
-//    mav.addObject("abc","123");
-//    return mav;
+       Customer customer = new Customer();
+       customer = customerService.getCustomer(customer);
+      request.getSession().setAttribute("customer",customer);
+      request.getRequestDispatcher("123.jsp").forward(request,response);
+
+
+
+
+
+
+
+//   @RequestMapping("uu")
+//public void getCustomers(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+////       System.out.println("进来了");
+////       Customer customer = new Customer();
+////       customer = customerService.getCustomer(customer);
+////       request.getSession().setAttribute("customer",customer);
+////       request.getRequestDispatcher("index.jsp").forward(request,response);
+//       request.getSession().setAttribute("abc","123");
+//       request.getRequestDispatcher("123.jsp").forward(request,response);
+
 }
 }

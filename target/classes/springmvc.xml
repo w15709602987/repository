@@ -13,7 +13,7 @@
 <!--    <context:component-scan base-package="netscape" use-default-filters="false">-->
 <!--        <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>-->
 <!--    </context:component-scan>-->
-    <context:component-scan base-package="zuikecheng.controller"/>
+    <context:component-scan base-package="zuikecheng"/>
     <!-- 配置注解驱动 -->
     <mvc:annotation-driven/>
 
