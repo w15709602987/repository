@@ -21,18 +21,21 @@
 
   <dependencies>
     <dependency>
+<!--      回归测试框架-->
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>4.11</version>
       <scope>test</scope>
     </dependency>
     <dependency>
+<!--      aspectjweaver是spring的切入点表达式需要用的包-->
       <groupId>org.aspectj</groupId>
       <artifactId>aspectjweaver</artifactId>
       <version>1.8.13</version>
     </dependency>
 
     <dependency>
+<!--      这个jar文件包含Spring框架基本的核心工具类-->
       <groupId>org.springframework</groupId>
       <artifactId>spring-core</artifactId>
       <version>4.3.14.RELEASE</version>
@@ -43,6 +46,7 @@
       <version>4.3.14.RELEASE</version>
     </dependency>
     <dependency>
+<!--      这个jar文件是所有应用都要用到的，它包含访问配置文件、创建和管理bean以及进行Inversion of Control / Dependency Injection（IoC/DI）操作相关的所有类。-->
       <groupId>org.springframework</groupId>
       <artifactId>spring-beans</artifactId>
       <version>4.3.14.RELEASE</version>
@@ -54,36 +58,43 @@
       <version>4.3.14.RELEASE</version>
     </dependency>
     <dependency>
+<!--      这个jar文件为Spring核心提供了大量扩展。可以找到使用Spring ApplicationContext特性时所需的全部类-->
       <groupId>org.springframework</groupId>
       <artifactId>spring-context</artifactId>
       <version>4.3.14.RELEASE</version>
     </dependency>
     <dependency>
+<!--        对spring-context的支持包-->
       <groupId>org.springframework</groupId>
       <artifactId>spring-context-support</artifactId>
       <version>4.3.14.RELEASE</version>
     </dependency>
     <dependency>
+<!--        Spring-tx模块负责在spring框架中实现事务管理功能。以aop切面的方式将事务注入到业务代码中，并实现不同类型的事务管理器-->
       <groupId>org.springframework</groupId>
       <artifactId>spring-tx</artifactId>
       <version>4.3.14.RELEASE</version>
     </dependency>
     <dependency>
+<!--        数据库资源管理和数据处理-->
       <groupId>org.springframework</groupId>
       <artifactId>spring-jdbc</artifactId>
       <version>4.3.14.RELEASE</version>
     </dependency>
     <dependency>
+<!--        将Java对象状态自动映射到关系数据库中的数据上，从而提供透明化的持久化支持，即把一种形式转化为另一种形式。-->
       <groupId>org.springframework</groupId>
       <artifactId>spring-orm</artifactId>
       <version>4.3.14.RELEASE</version>
     </dependency>
     <dependency>
+<!--        包含web应用开发时，用到spring框架时所需的核心类，包括自动载入webapplicationcontext特性的类、struts与jsf集成类、文件上传的支持类、filter类和大量工具辅助类-->
       <groupId>org.springframework</groupId>
       <artifactId>spring-web</artifactId>
       <version>4.3.14.RELEASE</version>
     </dependency>
     <dependency>
+<!--      这个jar文件包含Spring MVC框架相关的所有类。包含国际化、标签、Theme、视图展现的FreeMarker、JasperReports、Tiles、Velocity、XSLT相关类。当然，如果你的应用使用了独立的MVC框架，则无需这个JAR文件里的任何类。-->
       <groupId>org.springframework</groupId>
       <artifactId>spring-webmvc</artifactId>
       <version>4.3.14.RELEASE</version>
@@ -96,25 +107,23 @@
 
     <!--jstl -->
     <dependency>
+<!--        jstl标签库-->
       <groupId>jstl</groupId>
       <artifactId>jstl</artifactId>
       <version>1.2</version>
     </dependency>
 
     <dependency>
+<!--        支持HttpServletRequest和HttpServletResponse等对象-->
       <groupId>javax.servlet</groupId>
       <artifactId>servlet-api</artifactId>
       <version>2.5</version>
       <scope>provided</scope>
     </dependency>
 
-    <dependency>
-      <groupId>jspapi</groupId>
-      <artifactId>jsp-api</artifactId>
-      <version>2.0</version>
-      <scope>provided</scope>
-    </dependency>
+
   <dependency>
+<!--      将JSON格式的数据转化为类对象-->
     <groupId>com.fasterxml.jackson.core</groupId>
     <artifactId>jackson-databind</artifactId>
     <version>2.9.4</version>
@@ -132,18 +141,20 @@
         </plugin>
         <!-- see http://maven.apache.org/ref/current/maven-core/default-bindings.html#Plugin_bindings_for_war_packaging -->
         <plugin>
+<!--            项目资源文件并拷贝到输出目录-->
           <artifactId>maven-resources-plugin</artifactId>
           <version>3.0.2</version>
         </plugin>
+
+            <!-- 指定maven编译的jdk版本,如果不指定,maven3默认用jdk 1.5 maven2默认用jdk1.3 -->
+
         <plugin>
-          <artifactId>maven-compiler-plugin</artifactId>
-          <version>3.8.0</version>
-        </plugin>
-        <plugin>
+<!--            用于mvn 生命周期的测试阶段-->
           <artifactId>maven-surefire-plugin</artifactId>
           <version>2.22.1</version>
         </plugin>
         <plugin>
+<!--            解析war包，实现war之间的依赖注入配置-->
           <artifactId>maven-war-plugin</artifactId>
           <version>3.2.2</version>
         </plugin>
@@ -152,6 +163,7 @@
           <version>2.5.2</version>
         </plugin>
         <plugin>
+<!--            maven deploy plugin主要是为了用来将artifact部署到远程仓库中-->
           <artifactId>maven-deploy-plugin</artifactId>
           <version>2.8.2</version>
         </plugin>
@@ -172,6 +184,7 @@
         <!-- maven插件控制 -->
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
+            <!-- 指定maven编译的jdk版本,如果不指定,maven3默认用jdk 1.5 maven2默认用jdk1.3 -->
           <artifactId>maven-compiler-plugin</artifactId>
           <version>3.1</version>
           <configuration>

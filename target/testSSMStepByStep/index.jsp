@@ -3,7 +3,7 @@
 <body>
 <h2>Hello World!</h2>
 ${requestScope.index}
-<form name="index.do"action="index.jsp">
+<form name="index.do"action="index.do">
 
     <table width="98%" border="0" cellpadding="2" cellspacing="1" bgcolor="#D1DDAA" align="center" style="margin-top:8px">
         <tr bgcolor="#E7E7E7">

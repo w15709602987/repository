@@ -1,6 +1,6 @@
-package dao;
+package zuikecheng.dao;
 
-import bean.Customer;
+import zuikecheng.bean.Customer;
 import org.springframework.stereotype.Repository;
 import java.sql.Date;
 

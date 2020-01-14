@@ -12,7 +12,7 @@
 		http://www.springframework.org/schema/beans/spring-beans.xsd
 		http://www.springframework.org/schema/context
 		http://www.springframework.org/schema/context/spring-context.xsd">
-<!--    ApplicationContext就是对象容器，它负责维护配置文件来完成对象的生成。这里的对象是controller，生成controller文件-->
-    <context:component-scan base-package="controller" />
+<context:component-scan base-package="zuikecheng.controller" />
+
 
 </beans>

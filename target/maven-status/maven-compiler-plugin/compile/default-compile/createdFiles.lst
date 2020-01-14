@@ -1,4 +1,4 @@
-bean\Customer.class
-service\CustomerService.class
-controller\IndexController.class
-dao\CustomerDao.class
+zuikecheng\bean\Customer.class
+zuikecheng\dao\CustomerDao.class
+zuikecheng\controller\IndexController.class
+zuikecheng\service\CustomerService.class

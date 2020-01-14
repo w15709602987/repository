@@ -1,18 +1,11 @@
-package controller;
+package zuikecheng.controller;
 
-import bean.Customer;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.servlet.ModelAndView;
-import service.CustomerService;
-
-import javax.ws.rs.GET;
 
 
 @Controller
-@RequestMapping("/uu")
+@RequestMapping("/test")
 public class IndexController {
    // @Autowired
  //   CustomerService customerService;
@@ -24,7 +17,7 @@ public class IndexController {
 //         mav.addObject("index","123");
 //         return mav;
 //    }
-
+   @RequestMapping("/uu")
 public void getCustomers(){
     System.out.println("进来了");
    // mav.setViewName("123.jsp");

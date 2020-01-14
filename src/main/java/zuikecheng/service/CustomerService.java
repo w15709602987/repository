@@ -1,7 +1,7 @@
-package service;
+package zuikecheng.service;
 
-import bean.Customer;
-import dao.CustomerDao;
+import zuikecheng.bean.Customer;
+import zuikecheng.dao.CustomerDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
