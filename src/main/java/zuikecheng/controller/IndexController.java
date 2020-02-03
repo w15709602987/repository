@@ -42,7 +42,7 @@ public void getCustomers(HttpServletRequest request, HttpServletResponse respons
 ////       request.getSession().setAttribute("customer",customer);
 ////       request.getRequestDispatcher("index.jsp").forward(request,response);
 //       request.getSession().setAttribute("abc","123");
-//       request.getRequestDispatcher("23.jsp").forward(request,response);
+//       request.getRequestDispatcher("123.jsp").forward(request,response);
 
 }
 }
