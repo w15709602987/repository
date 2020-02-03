@@ -11,6 +11,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.*;
 
 
 @Controller
@@ -27,17 +28,11 @@ public class IndexController {
 //    }
 @RequestMapping("uu")
 public void getCustomers(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-//       System.out.println("进来了");
-       Customer customer = new Customer();
-       customer = customerService.getCustomer(customer);
-      request.getSession().setAttribute("customer",customer);
-      request.getRequestDispatcher("123.jsp").forward(request,response);
+     System.out.println("进来了");
 
-
-
-
-
-
+    List<Customer> customerList = customerService.getCustomer();
+    request.getSession().setAttribute("customers",customerList);
+    request.getRequestDispatcher("123.jsp").forward(request,response);
 
 //   @RequestMapping("uu")
 //public void getCustomers(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

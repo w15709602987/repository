@@ -1,29 +1,28 @@
 package zuikecheng.dao;
 
+import org.apache.ibatis.annotations.Select;
 import zuikecheng.bean.Customer;
 import org.springframework.stereotype.Repository;
-import java.sql.Date;
+import java.util.List;
 
 @Repository
-public class CustomerDao {
-    public Customer findCustomer(Customer customer) {
-        customer.setId(1);
-        customer.setCustomername("wei");
-        customer.setCompanyname("123");
-        customer.setAddtime(new Date(2020 - 1 - 9));
-        customer.setModtime(new Date(2020 - 1 - 9));
-        customer.setCellphone("1008611");
-        customer.setCompanyaddress("宏福苑");
-        customer.setLandline("1212");
-        customer.setIntroduction("略");
-        customer.setRemarks("略");
-        return customer;
-    }
+public interface CustomerDao {
+    @Select("select * from customer")
+    List<Customer> findCustomer();
+//        customer.setId(1);
+//        customer.setCustomername("wei");
+//        customer.setCompanyname("123");
+//        customer.setAddtime(new Date(2020 - 1 - 9));
+//        customer.setModtime(new Date(2020 - 1 - 9));
+//        customer.setCellphone("1008611");
+//        customer.setCompanyaddress("瀹忕¦忚嫅");
+//        customer.setLandline("1212");
+//        customer.setIntroduction("鐣¥");
+//        customer.setRemarks("鐣¥");
+//        return customer;
 //@Select("select * from customer where id=#{id}")
-//    public Customer findCustomer(Customer customer);
-
+//    public Customer findCustomer(Customer customer);}
 }
-
 /*
     //添加客户的数据库操作
     public void addCustomer(Customer customer) {
