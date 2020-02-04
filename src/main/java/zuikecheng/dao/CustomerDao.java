@@ -10,7 +10,8 @@ import java.util.List;
 public interface CustomerDao {
 //    @Select("select * from customer")
 //    List<Customer> findCustomer();
-    @Select("select * from customer order by ${orderByMethod} desc limit #{pageNum1},#{pageSize}")
+
+    @Select("select * from customer where ${conditionName} like concat('%',#{conditionValue},'%') order by ${orderByMethod} desc limit #{pageNum1},#{pageSize}")
     List<Customer> CodAndPageQueCustomer(@Param("pageNum1")int pageNum1,@Param("pageSize")int pageSize,@Param("conditionName") String conditionName,@Param("conditionValue")String conditionValue,@Param("orderByMethod")String orderByMethod);
 
     @Select("select count(*) from customer where #{conditionName} like concat('%',#{conditionValue})")
