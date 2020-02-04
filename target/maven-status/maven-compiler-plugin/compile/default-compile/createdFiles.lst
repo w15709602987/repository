@@ -1,4 +1,5 @@
 zuikecheng\bean\Customer.class
+zuikecheng\controller\CustomerController.class
 zuikecheng\dao\CustomerDao.class
-zuikecheng\controller\IndexController.class
+zuikecheng\bean\PageBean.class
 zuikecheng\service\CustomerService.class

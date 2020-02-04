@@ -1,5 +1,6 @@
 package zuikecheng.dao;
 
+import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
 import zuikecheng.bean.Customer;
 import org.springframework.stereotype.Repository;
@@ -7,8 +8,21 @@ import java.util.List;
 
 @Repository
 public interface CustomerDao {
-    @Select("select * from customer")
-    List<Customer> findCustomer();
+//    @Select("select * from customer")
+//    List<Customer> findCustomer();
+    @Select("select * from customer order by ${orderByMethod} desc limit #{pageNum1},#{pageSize}")
+    List<Customer> CodAndPageQueCustomer(@Param("pageNum1")int pageNum1,@Param("pageSize")int pageSize,@Param("conditionName") String conditionName,@Param("conditionValue")String conditionValue,@Param("orderByMethod")String orderByMethod);
+
+    @Select("select count(*) from customer where #{conditionName} like concat('%',#{conditionValue})")
+    int findCount(@Param("conditionName")String conditionName,@Param("conditionValue")String conditionValue);
+
+    @Select("select * from customer where id=#{id}")
+    Customer customerLook(String id);
+
+
+
+}
+// order By orderByMethod=#{orderByMethod} desc limit pageNum1=#{pageNum1},pageSize=#{pageSize}
 //        customer.setId(1);
 //        customer.setCustomername("wei");
 //        customer.setCompanyname("123");
@@ -22,7 +36,7 @@ public interface CustomerDao {
 //        return customer;
 //@Select("select * from customer where id=#{id}")
 //    public Customer findCustomer(Customer customer);}
-}
+
 /*
     //添加客户的数据库操作
     public void addCustomer(Customer customer) {

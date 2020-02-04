@@ -1,4 +1,5 @@
 D:\testSSMStepByStep\src\main\java\zuikecheng\bean\Customer.java
 D:\testSSMStepByStep\src\main\java\zuikecheng\dao\CustomerDao.java
+D:\testSSMStepByStep\src\main\java\zuikecheng\controller\CustomerController.java
 D:\testSSMStepByStep\src\main\java\zuikecheng\service\CustomerService.java
-D:\testSSMStepByStep\src\main\java\zuikecheng\controller\IndexController.java
+D:\testSSMStepByStep\src\main\java\zuikecheng\bean\PageBean.java
