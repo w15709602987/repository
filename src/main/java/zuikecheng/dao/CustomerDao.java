@@ -1,7 +1,9 @@
 package zuikecheng.dao;
 
+import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
+import org.springframework.web.bind.annotation.RequestMapping;
 import zuikecheng.bean.Customer;
 import org.springframework.stereotype.Repository;
 import java.util.List;
@@ -20,8 +22,8 @@ public interface CustomerDao {
     @Select("select * from customer where id=#{id}")
     Customer customerLook(String id);
 
-
-
+    @Insert("insert into customer values(#{customer.id},#{customer.customername},#{customer.companyname},#{customer.addtime},#{customer.modtime},#{customer.cellphone},#{customer.companyaddress},#{customer.landline},#{customer.introduction},#{customer.remarks})")
+    void addCustomer(@Param("customer") Customer customer);
 }
 // order By orderByMethod=#{orderByMethod} desc limit pageNum1=#{pageNum1},pageSize=#{pageSize}
 //        customer.setId(1);
@@ -36,7 +38,7 @@ public interface CustomerDao {
 //        customer.setRemarks("鐣¥");
 //        return customer;
 //@Select("select * from customer where id=#{id}")
-//    public Customer findCustomer(Customer customer);}
+//    public Customer findCustomer(Customer customer);}(id,customername,companyname,addtime,modtime,cellphone,companyaddress,landline,intruction,remarks)
 
 /*
     //添加客户的数据库操作

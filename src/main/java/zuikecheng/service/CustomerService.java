@@ -50,6 +50,10 @@ public class CustomerService {
     public Customer customerLook(String id) {
         return customerDao.customerLook(id);
     }
+
+    public void addCustomer(Customer customer) {
+        customerDao.addCustomer(customer);
+    }
 //
 //    public List<Customer> findCustomer() {
 //        return customerDao.findCustomer();

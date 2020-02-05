@@ -50,7 +50,7 @@
                         当前位置:客户信息管理>>客户信息
                     </td>
                     <td>
-                        <input type='button' class="coolbg np" onClick="location='/project/jsp/customer-add.jsp';" value='添加客户信息' />
+                        <input type='button' class="coolbg np" onClick="location='/testSSMStepByStep/customer-add.jsp';" value='添加客户信息' />
                     </td>
                 </tr>
             </table>

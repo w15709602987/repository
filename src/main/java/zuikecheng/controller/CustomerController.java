@@ -15,6 +15,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.sql.Date;
 import java.util.*;
 
 
@@ -64,6 +65,60 @@ public void getCustomers(HttpServletRequest request, HttpServletResponse respons
         Customer customer = customerService.customerLook(id);
         request.getSession().setAttribute("customerLook", customer);
         request.getRequestDispatcher("/customer-look.jsp").forward(request, response);
+    }
+
+
+    @RequestMapping("add")
+    public void addCustomers(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        request.setCharacterEncoding("utf-8");
+        //获取用户输入的信息
+        String customername = request.getParameter("customername");
+        String companyname = request.getParameter("companyname");
+        String cellphone = request.getParameter("cellphone");
+        String companyaddress = request.getParameter("companyaddress");
+        String landline = request.getParameter("landline");
+        String introduction = request.getParameter("introduction");
+        String remarks = request.getParameter("remarks");
+        //获取用户添加的当前时间；
+        Calendar c = Calendar.getInstance();//默认是当前日期
+        // 获得年份
+        int year = c.get(Calendar.YEAR)-1900;
+        // 获得月份
+        int month = c.get(Calendar.MONTH);
+        // 获得日期
+        int date = c.get(Calendar.DATE);
+
+
+
+        //将获得的参数添加到addtime中；
+        java.sql.Date addtime = new java.sql.Date(year,month,date);
+
+        //在添加过程中，添加时间==修改时间
+        java.sql.Date modtime = new Date(year,month,date);
+
+        Customer customer = new Customer();
+        customer.setCustomername(customername);
+        customer.setCompanyname(companyname);
+        customer.setAddtime(addtime);
+        customer.setCellphone(cellphone);
+        customer.setCompanyaddress(companyaddress);
+        customer.setLandline(landline);
+        customer.setIntroduction(introduction);
+        customer.setRemarks(remarks);
+        customer.setModtime(modtime);
+
+        //由Service层来调用方法
+
+        customerService.addCustomer(customer);
+
+        //添加完成后回到客户信息页面，客户信息页面的值是查询数据库得来的；
+        request.getRequestDispatcher("/uu.do?pageNum=1&&conditionName=companyname&&conditionValue=&&orderByMethod=addtime").forward(request,response);
+
+
+
+
+
+
     }
 //   @RequestMapping("uu")
 //public void getCustomers(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
