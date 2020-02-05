@@ -13,84 +13,30 @@
     <link rel="stylesheet" type="text/css" href="/skin/css/base.css">
 </head>
 <script>
-
-    /*表单的onsubmit属性，在表单提交前检查表单的参数内容，若为false，则无法提交！*/
-    window.onload = function () {
-        var companyname = document.getElementById("companyname");
-        companyname.onblur = function () {
-            var namevalue = companyname.value;
-            if (/.*[0-9].*/.exec(namevalue)) {
-
-                alert("公司名称不能有数字");
-
-                companyname.value = "";
-            }
-
-        }
-
-        var cellphone = document.getElementById("cellphone");
-        cellphone.onblur = function () {
-            var phonevalue = cellphone.value;
-            var phonespan = document.getElementById("cellphone");
-
-            if (!/^[1][3,4,5,7,8][0-9]{11}$/.exec(phonevalue)) {
-                phonespan.innerHTML = "<font color='red'>手机格式不正确</font>"
-            }else{
-                phonespan.innerHTML = ""
-            }
-        }
-
-        var landline = document.getElementById("landline");
-        landline.onblur = function () {
-            var planevalue = landline.value;
-            var planespan = document.getElementById("planespan");
-
-
-            if (!/0\d{2,3}-\d{7,8}/.exec(planevalue)) {
-                planespan.innerHTML = "<font color='red'>座机格式不正确</font>"
-            }else{
-                planespan.innerHTML = "";
-            }
-
-        }
+    function cal_words(){
+        var length = document.getElementById("introduction").value.length;
+        document.getElementById("num").innerHTML = length;
     }
+    function validateForm() {
+        var companyname = document.getElementById("companyname").value;
+        if (companyname.match("^[0-9]*$")!= null||companyname == "") {
+            alert("公司名称有误！！！(不能有数字)");
+            return false;
+        }
 
-   function check() {
-
-       var companyname = document.getElementById("name");
-       var namevalue = companyname.value;
-     if(namevalue==""||namevalue.trim().length==0){
-         alert("公司名称不能为空");
-       return  false;
-     }
-
-     var cellphone = document.getElementById("cellphone");
-     var phonevalue = cellphone.value;
-
-       if(phonevalue==""||phonevalue.trim().length==0){
-          alert("手机号码不能为空");
-         return false;
-      }else if(!/^[1][3,4,5,7,8][0-9]{11}$/.exec(phonevalue)){
-          alert("手机号有误，请重新输入")
-          return false;
-      };
-
-      var landline = document.getElementById("landline");
-      var planevalue = landline.value;
-      if(planevalue==""||planevalue.trim().length==0){
-          alert("座机号码不能为空");
-       return false;
-
-      }else if(!/0\d{2,3}-\d{7,8}/.exec(planevalue)){
-          alert("座机有误，请重新输入")
-          return false;
-      }
-
-      return  true;
+        var cellphone = document.getElementById("cellphone").value;
+        if (cellphone.match("^1(3|4|5|7|8|9)\\d{9}$") == null) {
+            alert("手机号格式有误！");
+            return false;
+        }
+        var landline = document.getElementById("landline").value;
+        if (landline.match("0\\d{2,3}-\\d{7,8}$") == null) {
+            alert("座机号格式有误！");
+            return false;
+        }
 
 
-   }
-
+    }
 
 </script>
 <body leftmargin="8" topmargin="8" background='/skin/images/allbg.gif'>
@@ -149,7 +95,8 @@
         <tr >
             <td align="right" bgcolor="#FAFAF1" height="22">公司简介：</td>
             <td align='left' bgcolor="#FFFFFF" onMouseMove="javascript:this.bgColor='#FCFDEE';" onMouseOut="javascript:this.bgColor='#FFFFFF';" height="22">
-                <textarea rows=15 cols=130 name="introduction" id="introduction"></textarea>
+                <textarea rows=15 cols=130 name="introduction" id="introduction" onKeyUp="cal_words()"></textarea>
+                <div>字数：<span id="num">0</span></div>
             </td>
         </tr>
 
