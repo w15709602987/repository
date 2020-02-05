@@ -16,6 +16,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.Date;
+import java.text.SimpleDateFormat;
 import java.util.*;
 
 
@@ -80,21 +81,29 @@ public void getCustomers(HttpServletRequest request, HttpServletResponse respons
         String introduction = request.getParameter("introduction");
         String remarks = request.getParameter("remarks");
         //获取用户添加的当前时间；
-        Calendar c = Calendar.getInstance();//默认是当前日期
+        Calendar c = Calendar.getInstance(Locale.CHINA);//默认是当前日期
         // 获得年份
         int year = c.get(Calendar.YEAR)-1900;
         // 获得月份
         int month = c.get(Calendar.MONTH);
         // 获得日期
         int date = c.get(Calendar.DATE);
-
-
+        //获得小时,并换算成北京时间
+        int h=c.get(Calendar.HOUR_OF_DAY);
+        //获得分钟
+        int mi=c.get(Calendar.MINUTE);
+        //获得秒
+        int s=c.get(Calendar.SECOND);
 
         //将获得的参数添加到addtime中；
-        java.sql.Date addtime = new java.sql.Date(year,month,date);
+        java.util.Date at = new java.util.Date(year,month,date,h,mi,s);
+
+        SimpleDateFormat sdf2= new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+
+        String addtime=sdf2.format(at);
 
         //在添加过程中，添加时间==修改时间
-        java.sql.Date modtime = new Date(year,month,date);
+        java.util.Date modtime = new java.util.Date(year,month,date,h,mi,s);
 
         Customer customer = new Customer();
         customer.setCustomername(customername);

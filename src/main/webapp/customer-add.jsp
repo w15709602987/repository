@@ -15,65 +15,83 @@
 <script>
 
     /*表单的onsubmit属性，在表单提交前检查表单的参数内容，若为false，则无法提交！*/
-    function updateUse() {
-        //    校验表单
-        var customername = document.getElementById("customername").value;
-        if (customername == "" || customername.trim().length == 0) {
-            alert("客户名称不能为空！！！");
-            return false;
+    window.onload = function () {
+        var companyname = document.getElementById("companyname");
+        companyname.onblur = function () {
+            var namevalue = companyname.value;
+            if (/.*[0-9].*/.exec(namevalue)) {
+
+                alert("公司名称不能有数字");
+
+                companyname.value = "";
+            }
+
         }
 
-
-
-
-
-        //    校验手机号
-        var cellphone = document.getElementById("cellphone").value;
-        if (cellphone.match("^1(3|4|5|7|8|9)\\d{9}$") == null) {
-            alert("手机号格式有误！");
-            return false;
-        }
         var cellphone = document.getElementById("cellphone");
-        var cellphonevalue = cellphone.value;
+        cellphone.onblur = function () {
+            var phonevalue = cellphone.value;
+            var phonespan = document.getElementById("cellphone");
 
-        if(cellphonevalue==""||cellphonevalue.trim().length==0){
-            alert("手机号码不能为空");
-            return false;
-        }else if(!/^[1][3,4,5,7,8][0-9]{9}$/.exec(cellphonevalue)){
-            alert("输入有误，请重新输入")
-            return false;
-        };
+            if (!/^[1][3,4,5,7,8][0-9]{11}$/.exec(phonevalue)) {
+                phonespan.innerHTML = "<font color='red'>手机格式不正确</font>"
+            }else{
+                phonespan.innerHTML = ""
+            }
+        }
 
         var landline = document.getElementById("landline");
-        var landlinevalue = landline.value;
-        if(landlinevalue==""||landlinevalue.trim().length==0){
-            alert("座机号码不能为空");
-            return false;
+        landline.onblur = function () {
+            var planevalue = landline.value;
+            var planespan = document.getElementById("planespan");
 
-        }else if(!/0\d{2,3}-\d{7,8}/.exec(landlinevalue)){
-            alert("输入有误，请重新输入")
-            return false;
+
+            if (!/0\d{2,3}-\d{7,8}/.exec(planevalue)) {
+                planespan.innerHTML = "<font color='red'>座机格式不正确</font>"
+            }else{
+                planespan.innerHTML = "";
+            }
+
         }
-
-
-
-
-
-        //验证描述
-        var introduction = document.getElementById("introduction").value;
-        if (introduction == "" || introduction.trim().length == 0) {
-            alert("请输入正确的描述！");
-            return false;
-        }
-
-        //验证提交
-
-        var issub = confirm("确定要提交吗？");
-        if (!issub) {
-            return false;
-        }
-        return true
     }
+
+   function check() {
+
+       var companyname = document.getElementById("name");
+       var namevalue = companyname.value;
+     if(namevalue==""||namevalue.trim().length==0){
+         alert("公司名称不能为空");
+       return  false;
+     }
+
+     var cellphone = document.getElementById("cellphone");
+     var phonevalue = cellphone.value;
+
+       if(phonevalue==""||phonevalue.trim().length==0){
+          alert("手机号码不能为空");
+         return false;
+      }else if(!/^[1][3,4,5,7,8][0-9]{11}$/.exec(phonevalue)){
+          alert("手机号有误，请重新输入")
+          return false;
+      };
+
+      var landline = document.getElementById("landline");
+      var planevalue = landline.value;
+      if(planevalue==""||planevalue.trim().length==0){
+          alert("座机号码不能为空");
+       return false;
+
+      }else if(!/0\d{2,3}-\d{7,8}/.exec(planevalue)){
+          alert("座机有误，请重新输入")
+          return false;
+      }
+
+      return  true;
+
+
+   }
+
+
 </script>
 <body leftmargin="8" topmargin="8" background='/skin/images/allbg.gif'>
 

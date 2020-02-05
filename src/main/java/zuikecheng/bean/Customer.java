@@ -1,12 +1,12 @@
 package zuikecheng.bean;
 
 
-import java.sql.Date;
+import java.util.Date;
 public class Customer {
     private int id;
     private String customername;
     private String companyname;
-    private Date addtime;
+    private String addtime;
     private Date modtime;
     private String cellphone;
     private String companyaddress;
@@ -35,7 +35,7 @@ public class Customer {
         return companyname;
     }
 
-    public Date getAddtime() {
+    public String getAddtime() {
         return addtime;
     }
 
@@ -71,7 +71,7 @@ public class Customer {
         this.companyname = companyname;
     }
 
-    public void setAddtime(Date addtime) {
+    public void setAddtime(String addtime) {
         this.addtime = addtime;
     }
 

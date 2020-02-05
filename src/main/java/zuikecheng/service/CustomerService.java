@@ -16,7 +16,7 @@ public class CustomerService {
     public PageBean CodAndPageQueCustomer(int pageNum, String conditionName, String conditionValue, String orderByMethod) {
 
         //处理业务逻辑和业务处理所需的数据
-        int pageSize = 6;
+        int pageSize = 5;
 
         //每一页的记录开始的索引
         int pageNum1 = (pageNum - 1) * pageSize;

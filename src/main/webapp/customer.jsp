@@ -7,6 +7,7 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <html>
 
 <head>
@@ -69,7 +70,7 @@
 
         var arrs = document.getElementsByName("xuhao");//当前页只有5个序号！！！
         for (var i = 0;i<arrs.length;i++){
-            arrs[i].innerText = ${pageBean.pageNum}*6-5+i;
+            arrs[i].innerText = ${pageBean.pageNum}*5-4+i;
         }
 
     }
