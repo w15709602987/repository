@@ -114,10 +114,19 @@ public void getCustomers(HttpServletRequest request, HttpServletResponse respons
         //添加完成后回到客户信息页面，客户信息页面的值是查询数据库得来的；
         request.getRequestDispatcher("/uu.do?pageNum=1&&conditionName=companyname&&conditionValue=&&orderByMethod=addtime").forward(request,response);
 
+    }
 
-
-
-
+    @RequestMapping("delCustomer")
+    public void delCustomers(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+//先获取前端返回的数据，再有业务层去调动执行；
+        String[] ids = request.getParameterValues("id");
+        customerService.delCustomer(ids);
+        //删除完成后，调用查询
+        int pageNum = (int) request.getSession().getAttribute("pageNum");
+        String conditionName = (String) request.getSession().getAttribute("conditionName");
+        String conditionValue = (String) request.getSession().getAttribute("conditionValue");
+        String orderByMethod = (String) request.getSession().getAttribute("orderByMethod");
+        request.getRequestDispatcher("/uu.do?pageNum="+pageNum+"&&conditionName="+conditionName+"&&conditionValue="+conditionValue+"&&orderByMethod="+orderByMethod).forward(request,response);
 
     }
 //   @RequestMapping("uu")

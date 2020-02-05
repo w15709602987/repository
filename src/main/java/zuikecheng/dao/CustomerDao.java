@@ -1,5 +1,6 @@
 package zuikecheng.dao;
 
+import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
@@ -24,6 +25,9 @@ public interface CustomerDao {
 
     @Insert("insert into customer values(#{customer.id},#{customer.customername},#{customer.companyname},#{customer.addtime},#{customer.modtime},#{customer.cellphone},#{customer.companyaddress},#{customer.landline},#{customer.introduction},#{customer.remarks})")
     void addCustomer(@Param("customer") Customer customer);
+
+    @Delete("delete from customer where id in (#{ids})")
+    void delCustomer(@Param("ids") String[] ids);
 }
 // order By orderByMethod=#{orderByMethod} desc limit pageNum1=#{pageNum1},pageSize=#{pageSize}
 //        customer.setId(1);

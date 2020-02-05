@@ -14,6 +14,32 @@
     <link  href="/skin/css/base.css" type=text/css rel=stylesheet>
 </head>
 <script>
+    //全部数据删除的确认,在表单提交时被调用!
+    function delAll() {
+        var arrs = document.getElementsByName("id");
+        /*在进行批量删除前先判断是不是有选中的数据！*/
+        var judge = false;
+        for (var i = 0;i<arrs.length;i++){
+            if (arrs[i].checked==true){
+                judge = true;
+                break;
+            }
+        }
+
+        if (judge==false){
+            alert("请选择至少一条数据！");
+            return false;
+        }else {
+            //判断是不是要删除，若选择为false,则表单提交失败，即不进行删除操作！
+            var isconfirm = window.confirm("你确定要删除你选中的数据吗？");
+            if (!isconfirm){
+                return false;
+            }
+        }
+
+    }
+
+
     //当全选按钮被点击时，所有name=“id”的复选框被选中！
     //当全不选选按钮被点击时，所有name=“id”的复选框不被选中！
     //当反选按钮被点击是，所有name=“id”的复选框变为非！
@@ -39,6 +65,14 @@
         }
     }
 
+    window.onload = function () {
+
+        var arrs = document.getElementsByName("xuhao");//当前页只有5个序号！！！
+        for (var i = 0;i<arrs.length;i++){
+            arrs[i].innerText = ${pageBean.pageNum}*6-5+i;
+        }
+
+    }
 </script>
 <body leftmargin="8" topmargin="8" background='/skin/images/allbg.gif'>
 <table width="98%" border="0" cellpadding="0" cellspacing="1" bgcolor="#D1DDAA" align="center">
@@ -110,7 +144,7 @@
     </table>
 </form>
 
-<form name="form2" action="/project/delCustomer" method="post" onsubmit="return delAll();">
+<form name="form2" action="/testSSMStepByStep/delCustomer.do" method="post" onsubmit="return delAll();">
 
     <table width="98%" border="0" cellpadding="2" cellspacing="1" bgcolor="#D1DDAA" align="center" style="margin-top:8px">
         <tr bgcolor="#E7E7E7">
@@ -128,7 +162,7 @@
         <c:forEach var="customer" items="${pageBean.customers}">
             <tr align='center' bgcolor="#FFFFFF" onMouseMove="javascript:this.bgColor='#FCFDEE';" onMouseOut="javascript:this.bgColor='#FFFFFF';" height="22" >
                 <td><input type="checkbox" name="id" value="${customer.id}" ></td>
-                <td name="xuhao">${customer.id}</td>
+                <td name="xuhao"></td>
                 <td>${customer.customername}</td>
                 <td align="center">${customer.companyname}</td>
                 <td>${customer.addtime}</td>
@@ -175,8 +209,8 @@
                     pageBean.pageNum-5>0//则有前五页
                     pageBean.pageNum+4<=pageBean.totalPageNume//则有后四页
                 --%>
-                <c:forEach begin="${pageBean.pageNum-10>0?(pageBean.pageNum-5):1}"
-                           end="${pageBean.pageNum+9<=pageBean.totalPageNume?(pageBean.pageNum+9):pageBean.totalPageNume}"
+                <c:forEach begin="${pageBean.pageNum-5>0?(pageBean.pageNum-5):1}"
+                           end="${pageBean.pageNum+4<=pageBean.totalPageNume?(pageBean.pageNum+4):pageBean.totalPageNume}"
                            step="1" var="i">
                     <%--当前页不用加超链接--%>
                     <c:if test="${pageBean.pageNum==i}">
@@ -184,7 +218,7 @@
                     </c:if>
                     <c:if test="${pageBean.pageNum!=i}">
                         <span><a href="/testSSMStepByStep/uu.do?pageNum=${i}&&orderByMethod=${pageBean.orderByMethod}&&conditionValue=${pageBean.conditionValue}
-                    &&conditionname=${pageBean.conditionName}">${i}</a></span>
+                    &&conditionName=${pageBean.conditionName}">${i}</a></span>
                     </c:if>
                 </c:forEach>
 

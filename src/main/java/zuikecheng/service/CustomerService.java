@@ -16,7 +16,7 @@ public class CustomerService {
     public PageBean CodAndPageQueCustomer(int pageNum, String conditionName, String conditionValue, String orderByMethod) {
 
         //处理业务逻辑和业务处理所需的数据
-        int pageSize = 5;
+        int pageSize = 6;
 
         //每一页的记录开始的索引
         int pageNum1 = (pageNum - 1) * pageSize;
@@ -25,7 +25,7 @@ public class CustomerService {
         System.out.println(conditionName);
         System.out.println(conditionValue);
         System.out.println(orderByMethod);
-        System.out.println(pageNum1);
+        System.out.println(pageNum);
         System.out.println(pageSize);
         List<Customer> list = customerDao.CodAndPageQueCustomer(pageNum1, pageSize,conditionName,conditionValue, orderByMethod);
 
@@ -40,7 +40,7 @@ public class CustomerService {
 
         //将所有的分页查询数据分装到pageBean中；
         PageBean pageBean = new PageBean();
-        pageBean.setPageNum(pageNum1);                   // 当前页码的页数
+        pageBean.setPageNum(pageNum);                   // 当前页码的页数
         pageBean.setPageSize(pageSize);                //每页显示的记录条数
         pageBean.setTotalCount(totalCount);           //总的记录条数
         pageBean.setTotalPageNume(totalPageNume);    //总的页码数
@@ -53,6 +53,10 @@ public class CustomerService {
 
     public void addCustomer(Customer customer) {
         customerDao.addCustomer(customer);
+    }
+
+    public void delCustomer(String[] ids) {
+        customerDao.delCustomer(ids);
     }
 //
 //    public List<Customer> findCustomer() {
