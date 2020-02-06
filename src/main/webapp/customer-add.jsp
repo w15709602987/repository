@@ -113,7 +113,7 @@
                 &nbsp;
                 <%--<a href="/PPManagerSystem/jsp//customer.jsp" class="coolbg">保存</a>--%>
                 <input type="submit" value="保存" class="coolbg">
-                <a href="/testSSMStepByStep/uu.do?pageNum=1&&conditionName=companyname&&conditionValue=&&orderByMethod=addtime" class="coolbg">返回</a>
+                <a href="/testSSMStepByStep/uu.do?pageNum=1&&conditionName=companyName&&conditionValue=&&orderByMethod=addtime" class="coolbg">返回</a>
             </td>
         </tr>
     </table>
