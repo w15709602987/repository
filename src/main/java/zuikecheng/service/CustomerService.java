@@ -53,6 +53,14 @@ public class CustomerService {
     public void delCustomer(String id) {
         customerDao.delCustomer(id);
     }
+
+    public void updateCustomer(Customer customer, String id) {
+        customerDao.updateCustomer(customer, id);
+    }
+
+    public Customer customerEdit(String id) {
+        return customerDao.customerLook(id);
+    }
 //
 //    public List<Customer> findCustomer() {
 //        return customerDao.findCustomer();

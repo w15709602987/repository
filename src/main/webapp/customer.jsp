@@ -169,7 +169,7 @@
                 <td>${customer.addtime}</td>
                 <td>${customer.cellphone}</td>
 
-                <td><a href="/testSSMStepByStep/customerLook.do?id=${customer.id}">编辑</a> | <a href="/testSSMStepByStep/show.do?id=${customer.id}">查看详情</a></td>
+                <td><a href="/testSSMStepByStep/customerEdit.do?id=${customer.id}">编辑</a> | <a href="/testSSMStepByStep/show.do?id=${customer.id}">查看详情</a></td>
             </tr>
         </c:forEach>
 

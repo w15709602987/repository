@@ -15,7 +15,6 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.sql.Date;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
@@ -140,6 +139,63 @@ public void getCustomers(HttpServletRequest request, HttpServletResponse respons
         request.getRequestDispatcher("/uu.do?pageNum="+pageNum+"&&conditionName="+conditionName+"&&conditionValue="+conditionValue+"&&orderByMethod="+orderByMethod).forward(request,response);
 
     }
+
+    @RequestMapping("updateCustomer")
+    public void setCustomer(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String id =request.getParameter("id");
+        String companyname = request.getParameter("companyname");
+        String customername=request.getParameter("customername");
+        String companyaddress = request.getParameter("companyaddress");
+        String cellphone = request.getParameter("cellphone");
+        String landline = request.getParameter("landline");
+        String introduction = request.getParameter("introduction");
+        String remarks = request.getParameter("remarks");
+
+
+        Calendar c = Calendar.getInstance(Locale.CHINA);
+        int year = c.get(Calendar.YEAR)-1900;
+        int month = c.get(Calendar.MONTH);
+        int date = c.get(Calendar.DATE);
+        //获得小时
+        int h=c.get(Calendar.HOUR_OF_DAY);
+        //获得分钟
+        int mi=c.get(Calendar.MINUTE);
+        //获得秒
+        int s=c.get(Calendar.SECOND);
+
+
+
+        java.util.Date modtime = new java.util.Date(year,month,date,h,mi,s);
+        Customer customer = new Customer();
+        customer.setCustomername(customername);
+        customer.setCompanyname(companyname);
+
+        customer.setModtime(modtime);
+        customer.setCellphone(cellphone);
+        customer.setCompanyaddress(companyaddress);
+        customer.setLandline(landline);
+        customer.setIntroduction(introduction);
+        customer.setRemarks(remarks);
+
+
+        customerService.updateCustomer(customer,id);
+
+        int pageNum = (int) request.getSession().getAttribute("pageNum");
+        String conditionName = (String) request.getSession().getAttribute("conditionName");
+        String conditionValue = (String) request.getSession().getAttribute("conditionValue");
+        String orderByMethod = (String) request.getSession().getAttribute("orderByMethod");
+        request.getRequestDispatcher("/uu.do?pageNum="+pageNum+"&&conditionName="+conditionName+"&&conditionValue="+conditionValue+"&&orderByMethod="+orderByMethod).forward(request,response);
+    }
+
+    @RequestMapping("customerEdit")
+    public void customerEdit(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String id = request.getParameter("id");
+        Customer customer = customerService.customerEdit(id);
+        request.getSession().setAttribute("customerEdit",customer);
+        request.getRequestDispatcher("/customer-edit.jsp").forward(request,response);
+    }
+
+
 //   @RequestMapping("uu")
 //public void getCustomers(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 ////       System.out.println("进来了");

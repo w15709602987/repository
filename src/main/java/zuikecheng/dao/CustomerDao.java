@@ -1,9 +1,6 @@
 package zuikecheng.dao;
 
-import org.apache.ibatis.annotations.Delete;
-import org.apache.ibatis.annotations.Insert;
-import org.apache.ibatis.annotations.Param;
-import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.*;
 import org.springframework.web.bind.annotation.RequestMapping;
 import zuikecheng.bean.Customer;
 import org.springframework.stereotype.Repository;
@@ -28,6 +25,11 @@ public interface CustomerDao {
 
     @Delete("delete from customer where id in (#{id}) ")
     void delCustomer(@Param("id")String id);
+
+    @Update("update customer set customername= #{customer.customername},companyname= #{customer.companyname},companyaddress= #{customer.companyaddress},cellphone= #{customer.cellphone},landline= #{customer.landline},introduction= #{customer.introduction},remarks= #{customer.remarks},modtime= #{customer.modtime} where id=#{id} ")
+    void updateCustomer(@Param("customer") Customer customer,@Param("id") String id);
+
+
 }
 // order By orderByMethod=#{orderByMethod}@Param("ids")
 //        customer.setId(1);
