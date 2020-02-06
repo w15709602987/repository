@@ -4,6 +4,8 @@ import org.apache.ibatis.annotations.*;
 import org.springframework.web.bind.annotation.RequestMapping;
 import zuikecheng.bean.Customer;
 import org.springframework.stereotype.Repository;
+
+import java.util.ArrayList;
 import java.util.List;
 
 @Repository
@@ -34,9 +36,15 @@ public interface CustomerDao {
     @Update("update customer set customername= #{customer.customername},companyname= #{customer.companyname},companyaddress= #{customer.companyaddress},cellphone= #{customer.cellphone},landline= #{customer.landline},introduction= #{customer.introduction},remarks= #{customer.remarks},modtime= #{customer.modtime} where id=#{id} ")
     void updateCustomer(@Param("customer") Customer customer,@Param("id") String id);
 
-
+    @Insert("<script> \n" +
+            "        insert into customer(customername,companyname,addtime,modtime,cellphone,companyaddress,landline,introduction,remarks) values " +
+            "        <foreach collection=\"customerList\" index=\"index\" item=\"customer\"  separator=\",\" > " +
+            "        (#{customer.customername,jdbcType=VARCHAR},#{customer.companyname,jdbcType=VARCHAR},#{customer.addtime,jdbcType=DATE},#{customer.modtime,jdbcType=DATE},#{customer.cellphone,jdbcType=VARCHAR},#{customer.companyaddress,jdbcType=VARCHAR},#{customer.landline,jdbcType=VARCHAR},#{customer.introduction,jdbcType=VARCHAR},#{customer.remarks,jdbcType=VARCHAR})" +
+            "        </foreach> \n" +
+            "</script>")
+    void addMany(@Param("customerList")List<Customer> customerList);
 }
-// order By orderByMethod=#{orderByMethod}@Param("ids")
+// order By orderByMethod=#{orderByMethod}@Param("ids")(#{customer.customername},#{customer.companyname},#{customer.addtime},#{customer.modtime},#{customer.cellphone},#{customer.companyaddress},#{customer.landline},#{customer.introduction},#{customer.remarks}
 //        customer.setId(1);
 //        customer.setCustomername("wei");
 //        customer.setCompanyname("123");

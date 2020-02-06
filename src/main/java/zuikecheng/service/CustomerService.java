@@ -6,6 +6,8 @@ import zuikecheng.dao.CustomerDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.sql.Array;
+import java.util.ArrayList;
 import java.util.List;
 
 @Service("CustomerService")
@@ -60,6 +62,10 @@ public class CustomerService {
 
     public Customer customerEdit(String id) {
         return customerDao.customerLook(id);
+    }
+
+    public void addMany(List<Customer> customerList) {
+        customerDao.addMany(customerList);
     }
 //
 //    public List<Customer> findCustomer() {

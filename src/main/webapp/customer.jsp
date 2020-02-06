@@ -86,6 +86,7 @@
                     </td>
                     <td>
                         <input type='button' class="coolbg np" onClick="location='/testSSMStepByStep/customer-add.jsp';" value='添加客户信息' />
+                        <input type='button' class="coolbg np" onClick="location='/testSSMStepByStep/add.jsp';" value='批量添加客户信息' />
                     </td>
                 </tr>
             </table>
