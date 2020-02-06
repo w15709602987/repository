@@ -22,11 +22,6 @@ public class CustomerService {
         int pageNum1 = (pageNum - 1) * pageSize;
 
         //调用Dao层查询数据库获取当前页面的数据；
-        System.out.println(conditionName);
-        System.out.println(conditionValue);
-        System.out.println(orderByMethod);
-        System.out.println(pageNum);
-        System.out.println(pageSize);
         List<Customer> list = customerDao.CodAndPageQueCustomer(pageNum1, pageSize,conditionName,conditionValue, orderByMethod);
 
 
@@ -55,8 +50,8 @@ public class CustomerService {
         customerDao.addCustomer(customer);
     }
 
-    public void delCustomer(String[] ids) {
-        customerDao.delCustomer(ids);
+    public void delCustomer(String id) {
+        customerDao.delCustomer(id);
     }
 //
 //    public List<Customer> findCustomer() {

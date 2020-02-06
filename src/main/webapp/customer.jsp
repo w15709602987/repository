@@ -16,29 +16,29 @@
 </head>
 <script>
     //全部数据删除的确认,在表单提交时被调用!
-    function delAll() {
-        var arrs = document.getElementsByName("id");
-        /*在进行批量删除前先判断是不是有选中的数据！*/
-        var judge = false;
-        for (var i = 0;i<arrs.length;i++){
-            if (arrs[i].checked==true){
-                judge = true;
-                break;
-            }
-        }
-
-        if (judge==false){
-            alert("请选择至少一条数据！");
-            return false;
-        }else {
-            //判断是不是要删除，若选择为false,则表单提交失败，即不进行删除操作！
-            var isconfirm = window.confirm("你确定要删除你选中的数据吗？");
-            if (!isconfirm){
-                return false;
-            }
-        }
-
-    }
+    // function delAll() {
+    //     var arrs = document.getElementsByName("id");
+    //     /*在进行批量删除前先判断是不是有选中的数据！*/
+    //     var judge = false;
+    //     for (var i = 0;i<arrs.length;i++){
+    //         if (arrs[i].checked==true){
+    //             judge = true;
+    //             break;
+    //         }
+    //     }
+    //
+    //     if (judge==false){
+    //         alert("请选择至少一条数据！");
+    //         return false;
+    //     }else {
+    //         //判断是不是要删除，若选择为false,则表单提交失败，即不进行删除操作！
+    //         var isconfirm = window.confirm("你确定要删除你选中的数据吗？");
+    //         if (!isconfirm){
+    //             return false;
+    //         }
+    //     }
+    //
+    // }
 
 
     //当全选按钮被点击时，所有name=“id”的复选框被选中！

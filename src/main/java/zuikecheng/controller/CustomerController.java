@@ -128,8 +128,10 @@ public void getCustomers(HttpServletRequest request, HttpServletResponse respons
     @RequestMapping("delCustomer")
     public void delCustomers(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 //先获取前端返回的数据，再有业务层去调动执行；
-        String[] ids = request.getParameterValues("id");
-        customerService.delCustomer(ids);
+        String id = request.getParameter("id");
+//        String id = request.getParameterValues("id");
+        System.out.println(id);
+        customerService.delCustomer(id);
         //删除完成后，调用查询
         int pageNum = (int) request.getSession().getAttribute("pageNum");
         String conditionName = (String) request.getSession().getAttribute("conditionName");

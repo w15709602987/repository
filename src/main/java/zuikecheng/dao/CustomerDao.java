@@ -26,10 +26,10 @@ public interface CustomerDao {
     @Insert("insert into customer values(#{customer.id},#{customer.customername},#{customer.companyname},#{customer.addtime},#{customer.modtime},#{customer.cellphone},#{customer.companyaddress},#{customer.landline},#{customer.introduction},#{customer.remarks})")
     void addCustomer(@Param("customer") Customer customer);
 
-    @Delete("delete from customer where id in (#{ids})")
-    void delCustomer(@Param("ids") String[] ids);
+    @Delete("delete from customer where id in (#{id}) ")
+    void delCustomer(@Param("id")String id);
 }
-// order By orderByMethod=#{orderByMethod} desc limit pageNum1=#{pageNum1},pageSize=#{pageSize}
+// order By orderByMethod=#{orderByMethod}@Param("ids")
 //        customer.setId(1);
 //        customer.setCustomername("wei");
 //        customer.setCompanyname("123");
