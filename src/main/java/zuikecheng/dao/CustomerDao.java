@@ -23,8 +23,13 @@ public interface CustomerDao {
     @Insert("insert into customer values(#{customer.id},#{customer.customername},#{customer.companyname},#{customer.addtime},#{customer.modtime},#{customer.cellphone},#{customer.companyaddress},#{customer.landline},#{customer.introduction},#{customer.remarks})")
     void addCustomer(@Param("customer") Customer customer);
 
-    @Delete("delete from customer where id in (#{id}) ")
-    void delCustomer(@Param("id")String id);
+    @Delete("<script>\n" +
+            "         delete from customer where id in\n" +
+            "        <foreach collection=\"ids\" index=\"index\" item=\"item\" open=\"(\" separator=\",\" close=\")\">\n" +
+            "                #{item}       \n" +
+            "        </foreach>    \n" +
+            "</script>")
+    void delCustomer(@Param("ids")String[] ids);
 
     @Update("update customer set customername= #{customer.customername},companyname= #{customer.companyname},companyaddress= #{customer.companyaddress},cellphone= #{customer.cellphone},landline= #{customer.landline},introduction= #{customer.introduction},remarks= #{customer.remarks},modtime= #{customer.modtime} where id=#{id} ")
     void updateCustomer(@Param("customer") Customer customer,@Param("id") String id);

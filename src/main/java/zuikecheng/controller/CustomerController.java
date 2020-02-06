@@ -129,10 +129,10 @@ public void getCustomers(HttpServletRequest request, HttpServletResponse respons
 //先获取前端返回的数据，再有业务层去调动执行；
         String[] ids = request.getParameterValues("id");
 //        String id = request.getParameterValues("id");
-
-        for (int i = 0; i < ids.length; i++) {//循环遍历数集，输出排序后集合内的数
-            customerService.delCustomer(ids[i]);//打印数于前台
-        }
+        customerService.delCustomer(ids);
+//        for (int i = 0; i < ids.length; i++) {//循环遍历数集，输出排序后集合内的数
+//            customerService.delCustomer(ids[i]);//打印数于前台
+//        }
         //删除完成后，调用查询
         int pageNum = (int) request.getSession().getAttribute("pageNum");
         String conditionName = (String) request.getSession().getAttribute("conditionName");

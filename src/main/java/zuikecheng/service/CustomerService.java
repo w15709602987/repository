@@ -50,8 +50,8 @@ public class CustomerService {
         customerDao.addCustomer(customer);
     }
 
-    public void delCustomer(String id) {
-        customerDao.delCustomer(id);
+    public void delCustomer(String[] ids) {
+        customerDao.delCustomer(ids);
     }
 
     public void updateCustomer(Customer customer, String id) {
