@@ -1,6 +1,7 @@
 package zuikecheng.dao;
 
 import org.apache.ibatis.annotations.*;
+import org.apache.ibatis.mapping.FetchType;
 import org.springframework.stereotype.Repository;
 import zuikecheng.bean.Menu;
 import zuikecheng.bean.Role;
@@ -36,6 +37,13 @@ public interface RoleDao {
     void delUser_Role_R_id(@Param("r_id")String r_id,@Param("id") String id);
 
     @Select("select * from role where r_id= #{r_id}")
+    @Results({
+            @Result(id=true,column = "r_id", property = "r_id"),
+            @Result(column = "roleName",property = "roleName"),
+            @Result(column = "state",property = "state"),
+            @Result(column = "remarks",property = "remarks"),
+            @Result(column = "m_id", property = "r_id", one = @One(select = "com.zuikecheng.dao.RoleDao.findMenu", fetchType = FetchType.DEFAULT))
+    })
     Role roleEdit(@Param("r_id")String r_id);
 
     @Select("select m_id from role_menu where r_id= #{r_id}")
