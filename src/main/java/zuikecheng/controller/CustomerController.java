@@ -41,18 +41,15 @@ public void getCustomers(HttpServletRequest request, HttpServletResponse respons
     String orderByMethod = request.getParameter("orderByMethod");
     conditionValue = conditionValue.trim();
 
-
     request.getSession().setAttribute("pageNum", pageNum);
     request.getSession().setAttribute("conditionName", conditionName);
     request.getSession().setAttribute("conditionValue", conditionValue);
     request.getSession().setAttribute("orderByMethod", orderByMethod);
-
     //返回封装了分页查询数据的pageBean对象；
     PageBean pageBean = customerService.CodAndPageQueCustomer(pageNum, conditionName, conditionValue, orderByMethod);
     pageBean.setConditionName(conditionName);
     pageBean.setConditionValue(conditionValue);
     pageBean.setOrderByMethod(orderByMethod);
-
 
     request.getSession().setAttribute("pageBean", pageBean);
     request.getRequestDispatcher("customer.jsp").forward(request, response);

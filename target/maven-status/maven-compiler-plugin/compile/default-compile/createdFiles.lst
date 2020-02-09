@@ -1,5 +1,14 @@
-zuikecheng\bean\Customer.class
 zuikecheng\controller\CustomerController.class
+zuikecheng\bean\Role_Menu.class
+zuikecheng\controller\MenuController.class
+zuikecheng\bean\Role.class
+zuikecheng\service\CustomerService.class
+zuikecheng\bean\Customer.class
 zuikecheng\dao\CustomerDao.class
 zuikecheng\bean\PageBean.class
-zuikecheng\service\CustomerService.class
+zuikecheng\dao\MenuDao.class
+zuikecheng\bean\pageBean_Role.class
+zuikecheng\bean\pageBean_Menu.class
+zuikecheng\bean\R_id_M_id.class
+zuikecheng\service\MenuService.class
+zuikecheng\bean\Menu.class
