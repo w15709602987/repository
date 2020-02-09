@@ -2,8 +2,11 @@ zuikecheng\controller\CustomerController.class
 zuikecheng\bean\Role_Menu.class
 zuikecheng\controller\MenuController.class
 zuikecheng\bean\Role.class
+zuikecheng\dao\RoleDao.class
 zuikecheng\service\CustomerService.class
 zuikecheng\bean\Customer.class
+zuikecheng\controller\RoleController.class
+zuikecheng\service\RoleService.class
 zuikecheng\dao\CustomerDao.class
 zuikecheng\bean\PageBean.class
 zuikecheng\dao\MenuDao.class

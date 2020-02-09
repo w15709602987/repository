@@ -7,8 +7,11 @@ D:\testSSMStepByStep\src\main\java\zuikecheng\controller\CustomerController.java
 D:\testSSMStepByStep\src\main\java\zuikecheng\service\MenuService.java
 D:\testSSMStepByStep\src\main\java\zuikecheng\bean\Role.java
 D:\testSSMStepByStep\src\main\java\zuikecheng\bean\Menu.java
+D:\testSSMStepByStep\src\main\java\zuikecheng\service\RoleService.java
 D:\testSSMStepByStep\src\main\java\zuikecheng\dao\CustomerDao.java
 D:\testSSMStepByStep\src\main\java\zuikecheng\bean\pageBean_Menu.java
 D:\testSSMStepByStep\src\main\java\zuikecheng\service\CustomerService.java
 D:\testSSMStepByStep\src\main\java\zuikecheng\controller\MenuController.java
+D:\testSSMStepByStep\src\main\java\zuikecheng\controller\RoleController.java
+D:\testSSMStepByStep\src\main\java\zuikecheng\dao\RoleDao.java
 D:\testSSMStepByStep\src\main\java\zuikecheng\bean\PageBean.java

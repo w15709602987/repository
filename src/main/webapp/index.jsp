@@ -5,3 +5,4 @@
 <h2>Hello World!123</h2>
 <a href="/testSSMStepByStep/uu.do?pageNum=1&&conditionName=companyname&&conditionValue=&&orderByMethod=addtime">Customer</a>
 <a href="/testSSMStepByStep/queMenu.do?pageNum=1&&conditionName=menuname&&conditionValue=">Menu</a>
+<a href="/testSSMStepByStep/queRole.do?pageNum=1&&conditionName=roleName&&conditionValue=">Role</a>

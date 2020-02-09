@@ -63,7 +63,7 @@
     function delRoleOne(id) {
         var isconfirm = window.confirm("您确定要删除这个角色吗？");
         if (isconfirm){
-            window.location.href = "/testSSMStepByStep/delRole,do?id="+id;
+            window.location.href = "/testSSMStepByStep/delRole.do?id="+id;
         }
     }
 </script>
