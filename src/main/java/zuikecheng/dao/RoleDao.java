@@ -28,6 +28,10 @@ public interface RoleDao {
     void addRole_Menu(@Param("r_id") String r_id,@Param("m_id") String[] m_id);
 
     @Delete("delete from role where r_id= #{r_id}")
+    @Results({
+            @Result(id=true,column = "r_id", property = "r_id"),
+            @Result(column = "m_id", property = "r_id", one = @One(select = "com.zuikecheng.dao.RoleDao.delRole_Menu_table", fetchType = FetchType.DEFAULT))
+    })
     void delRoleOne(@Param("r_id")String r_id);
 
     @Delete("delete from role_menu where r_id= #{r_id}")
