@@ -14,10 +14,29 @@
     <LINK href="/images/newhead.css" type=text/css rel=stylesheet>
 </HEAD>
 <script>
-    function change() {
-        document.getElementById("im").src = "/testSSMStepByStep/img.do?"+new Date().getTime();
+    var code ;
+    function createCode(){
+        code = new Array();
+        var codeLength = 4;
+        var checkCode = document.getElementById("checkCode");
+        checkCode.value = "";
+        var selectChar = new Array(2,3,4,5,6,7,8,9,'A','B','C','D','E','F','G','H','J','K','L','M','N','P','Q','R','S','T','U','V','W','X','Y','Z');
+        for(var i=0;i<codeLength;i++) {
+            var charIndex = Math.floor(Math.random()*32);
+            code +=selectChar[charIndex];
+        }
+        checkCode.value = code;
     }
-
+    function validate () {
+        var inputCode = document.getElementById("yzm").value.toUpperCase();
+        if(inputCode != code ){
+            alert("验证码错误！");
+            return false;
+        }
+        else {
+            return true;
+        }
+    }
 </script>
 <BODY bgColor=#eef8e0 leftMargin=0 topMargin=0 MARGINWIDTH="0" MARGINHEIGHT="0">
 
@@ -81,12 +100,11 @@
                             <TR>
                                 <TD align=middle width=81><FONT color=#ffffff style="font-size: 12px;font-family:宋体;">验证码：</FONT></TD>
                                 <TD>
-
-                                    <INPUT class=regtxt title=请填写验证码 maxLength=50 size=16  name=code>
+                                    <input type="text" id="yzm" size="5" maxLength=50 size=16 />
                                 </TD>
                                 <td>
+                                    <input type="button" id="checkCode" onClick="createCode()" title="刷新验证码" style="width: 80px;height: 20px;cursor: pointer" />
                                     <%--  //生成验证码--%>
-                                    <img id="im" src="/testSSMStepByStep/img.do" style="width: 80px;height: 20px;cursor: pointer" onclick="change();">
                                 </td>
                             </TR>
                             <tr> <td colspan="2"style="padding-left: 60px;"><span style="color: red;font-size: 12px;font-family: 宋体">${sessionScope.msg1}</span>
@@ -111,7 +129,7 @@
             <TD>
 
                 <INPUT title=登录项目平台管理系统 type=image height=48 alt="" width=86
-                       src="/images/crm_17.gif" name=image>
+                       src="/images/crm_17.gif" name=image onClick="validate();" >
 
             </TD>
             <TD><IMG height=48 alt="" src="/images/crm_18.gif" width=21></TD>
