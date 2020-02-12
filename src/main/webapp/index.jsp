@@ -8,5 +8,6 @@
 <a href="/testSSMStepByStep/queRole.do?pageNum=1&&conditionName=roleName&&conditionValue=">Role</a>
 <a href="/testSSMStepByStep/test.do";>test</a>
 <a href="/testSSMStepByStep/queUser.do?pageNum=1&&conditionName=username&&conditionValue=&&orderByMethod=initiationtime">User</a>
+<a href="/testSSMStepByStep/login.jsp">login</a>
 </body>
 </html>

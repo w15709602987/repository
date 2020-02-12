@@ -156,7 +156,7 @@
             <td height="28" colspan=4 align=center>
                 &nbsp;
                 <input type="submit" value="保存" id="submit" class="coolbg">
-                <a href="/testSSMStepByStep/queUser.do?pageNum=${pageNum}&&conditionname=${conditionname}&&conditionvalue=${conditionvalue}&&orderByMethod=${orderByMethod}" class="coolbg">返回</a>
+                <a href="/testSSMStepByStep/queUser.do?pageNum=${pageNum}&&conditionName=${conditionName}&&conditionValue=${conditionValue}&&orderByMethod=${orderByMethod}" class="coolbg">返回</a>
             </td>
         </tr>
     </table>

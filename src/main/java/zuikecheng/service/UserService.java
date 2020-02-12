@@ -2,9 +2,7 @@ package zuikecheng.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import zuikecheng.bean.Role;
-import zuikecheng.bean.User;
-import zuikecheng.bean.pageBean_User;
+import zuikecheng.bean.*;
 import zuikecheng.dao.UserDao;
 
 import java.util.List;
@@ -79,5 +77,25 @@ public class UserService {
 
     public void UpdateUser_Role(String u_id, String r_id) {
         userDao.UpdateUser_Role(u_id, r_id);
+    }
+
+    public User loginQue(String username, String password) {
+        return userDao.loginQue(username, password);
+    }
+
+    public String findR_id(String username) {
+        return userDao.findR_id(username);
+    }
+
+    public String findRoleName(String r_id) {
+        return userDao.findRoleName(r_id);
+    }
+
+    public List<R_id_M_id> findM_ids(String r_id) {
+        return userDao.findM_ids(r_id);
+    }
+
+    public List<Menu> queMenuAndtoRoleAddjsp() {
+        return userDao.queMenuAndtoRoleAddjsp();
     }
 }

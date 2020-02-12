@@ -3,17 +3,20 @@ package zuikecheng.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import zuikecheng.bean.Role;
-import zuikecheng.bean.User;
-import zuikecheng.bean.pageBean_User;
+import zuikecheng.bean.*;
+import zuikecheng.bean.Menu;
 import zuikecheng.service.UserService;
 import zuikecheng.utils.Md5;
 
+import javax.imageio.ImageIO;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.awt.*;
+import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.util.List;
+import java.util.Random;
 
 @Controller
 public class UserController {
@@ -201,4 +204,163 @@ public class UserController {
         request.getSession().setAttribute("userShow",user);
         request.getRequestDispatcher("/user-look.jsp").forward(request,response);
     }
+    @RequestMapping("login")
+    public void login(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        //得到用户输入的username,password,code值
+        String username = request.getParameter("username");
+        String password = Md5.md5(request.getParameter("password"));
+        String code = request.getParameter("code");
+
+        //得到session中存储的code真值
+        String CODETRUE = (String) request.getSession().getAttribute("checkcode_session");
+
+
+
+
+        //实现字母验证不区分大小写验证
+        code=code.toLowerCase();
+        CODETRUE = CODETRUE.toLowerCase();
+
+        // 验证验证码对不对，若不对，则提示不对
+        if (CODETRUE.equals(code)==false||code==null){
+
+            //将错误信息存放到session中,并将页面转会到登陆页面；
+            //request.setAttribute("msg1","验证码输入错误！");
+            request.getSession().setAttribute("msg1","验证码输入错误！");
+            request.getRequestDispatcher("/login.jsp").forward(request,response);
+
+            //return返回，结束本程序！
+            return;
+        }
+
+        //验证码正确，则需要，将用户名和密码带到数据库中去查询是否一致，
+        //不一致，将错误信息存入session,转发到登陆页面
+        // 一致将用户信息存入session,重定向到主页面，
+        User user = userService.loginQue(username,password);
+        if (user==null){
+            //不一致，将错误信息存入session,转会到登陆页面
+            request.getSession().setAttribute("msg2","用户名或者密码错误！");
+            request.getRequestDispatcher("/login.jsp").forward(request,response);
+        }else {
+            //username
+            //登陆时根据用户名得到用户的u_id;
+            //用户登陆时根据用户u_id得到对应的角色r_id;-----子查询
+            String R_id = userService.findR_id(username);
+
+            //用户登陆时根据角色r_id得到对应的角色名称roleName;
+            String roleName = userService.findRoleName(R_id);
+
+            //登陆时根据角色r_id得到对应的权限m_id[],将此数据保存在session中，meanTest取值显示;
+            List<R_id_M_id> M_ids = userService.findM_ids(R_id);
+
+            request.getSession().setAttribute("M_ids",M_ids);
+
+            List<Menu> menuTest=userService.queMenuAndtoRoleAddjsp();
+            request.getSession().setAttribute("menuTest",menuTest);
+            request.getSession().setAttribute("roleName",roleName);
+
+            // 一致将用户信息存入session,重定向到主页面，
+            request.getSession().setAttribute("user",user);
+            response.sendRedirect("/testSSMStepByStep/index.jsp");
+        }
+    }
+    @RequestMapping("img")
+    public void img(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        int width = 120;
+        int height = 30;
+
+        // 步骤一 绘制一张内存中图片
+        BufferedImage bufferedImage = new BufferedImage(width, height,
+                BufferedImage.TYPE_INT_RGB);
+
+        // 步骤二 图片绘制背景颜色 ---通过绘图对象
+        Graphics graphics = bufferedImage.getGraphics();// 得到画图对象 --- 画笔
+        // 绘制任何图形之前 都必须指定一个颜色
+        graphics.setColor(getRandColor(200, 250));
+        graphics.fillRect(0, 0, width, height);
+
+        // 步骤三 绘制边框
+        graphics.setColor(Color.WHITE);
+        graphics.drawRect(0, 0, width - 1, height - 1);
+
+        // 步骤四 四个随机数字
+        Graphics2D graphics2d = (Graphics2D) graphics;
+        // 设置输出字体
+        graphics2d.setFont(new Font("宋体", Font.BOLD, 18));
+
+        String words ="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890";
+
+        Random random = new Random();// 生成随机数
+
+        StringBuffer buffer=new StringBuffer();//字符串缓冲区对象
+        // 定义x坐标
+        int x = 10;
+        for (int i = 0; i < 4; i++) {
+            // 随机颜色
+            graphics2d.setColor(new Color(20 + random.nextInt(110), 20 + random
+                    .nextInt(110), 20 + random.nextInt(110)));
+            // 旋转 -30 --- 30度
+            int jiaodu = random.nextInt(60) - 30;
+            // 换算弧度
+            double theta = jiaodu * Math.PI / 180;
+
+            // 生成一个随机数字
+            int index = random.nextInt(words.length()); // 生成随机数 0 到 length - 1
+            // 获得字母数字
+            char c = words.charAt(index);
+            buffer.append(c);//把每一个汉字加到字符串缓冲区中
+            // 将c 输出到图片
+            graphics2d.rotate(theta, x, 20);
+            graphics2d.drawString(String.valueOf(c), x, 20);
+            graphics2d.rotate(-theta, x, 20);
+            x += 30;
+        }
+        //System.out.println("checkcode_session   checkimg="+buffer.toString());
+
+//        将验证码存储到session中
+        request.getSession().setAttribute("checkcode_session",buffer.toString());
+
+
+        // 步骤五 绘制干扰线
+        graphics.setColor(getRandColor(160, 200));
+        int x1;
+        int x2;
+        int y1;
+        int y2;
+        for (int i = 0; i < 10; i++) {
+            x1 = random.nextInt(width);
+            x2 = random.nextInt(12);
+            y1 = random.nextInt(height);
+            y2 = random.nextInt(12);
+            graphics.drawLine(x1, y1, x1 + x2, x2 + y2);
+        }
+
+        // 将上面图片输出到浏览器 ImageIO
+        graphics.dispose();// 释放资源
+        ImageIO.write(bufferedImage, "jpg", response.getOutputStream());
+    }
+    /**
+     * 取其某一范围的color
+     *
+     * @param fc
+     *            int 范围参数1
+     * @param bc
+     *            int 范围参数2
+     * @return Color
+     */
+    private Color getRandColor(int fc, int bc) {
+        // 取其随机颜色
+        Random random = new Random();
+        if (fc > 255) {
+            fc = 255;
+        }
+        if (bc > 255) {
+            bc = 255;
+        }
+        int r = fc + random.nextInt(bc - fc);
+        int g = fc + random.nextInt(bc - fc);
+        int b = fc + random.nextInt(bc - fc);
+        return new Color(r, g, b);
+    }
+
 }

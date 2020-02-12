@@ -2,9 +2,7 @@ package zuikecheng.dao;
 
 import org.apache.ibatis.annotations.*;
 import org.springframework.stereotype.Repository;
-import zuikecheng.bean.Customer;
-import zuikecheng.bean.Role;
-import zuikecheng.bean.User;
+import zuikecheng.bean.*;
 
 import java.util.List;
 
@@ -54,6 +52,22 @@ public interface UserDao {
 
     @Update("update user_role set r_id= #{r_id} where u_id= #{u_id}")
     void UpdateUser_Role(@Param("u_id") String u_id,@Param("r_id") String r_id);
+
+    @Select("select * from user where username= #{username} and password= #{password} ")
+    User loginQue(@Param("username")String username,@Param("password") String password);
+
+    @Select("select r_id from user_role where u_id =(select u_id from user where username= #{username})")
+    String findR_id(@Param("username")String username);
+
+    @Select("select roleName from role where r_id= #{r_id}")
+    String findRoleName(@Param("r_id")String r_id);
+
+    @Select("select m_id from role_menu where r_id= #{r_id}")
+    List<R_id_M_id> findM_ids(@Param("r_id")String r_id);
+
+    @Select("select * from menu")
+    List<Menu> queMenuAndtoRoleAddjsp();
+
 //
 //
 

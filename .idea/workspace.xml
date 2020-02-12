@@ -8,32 +8,141 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c8f1c2f3-3b58-4515-8981-cf62e7381f08" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/zuikecheng/bean/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/zuikecheng/bean/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/zuikecheng/bean/pageBean_User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/zuikecheng/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/zuikecheng/controller/testController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/zuikecheng/dao/TestDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/zuikecheng/dao/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/zuikecheng/service/TestService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/zuikecheng/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/zuikecheng/utils/Md5.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/test.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/user-add.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/user-edit.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/user-look.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/user.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Java_EE_6_Java_EE_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/Admin(1).js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/Admin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/Bar.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/CssAdmin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/Dot_Info.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/Edit.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/Explain.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/Login_line.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/Login_tit.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/Menu_BG.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/Menu_BG1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/Select.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/SoftKey.Js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/SoftKey.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/SortEnd_Folder_Close.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/SortEnd_Folder_Open.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/Sort_File.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/Sort_File_End.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/Sort_Folder_Close.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/Sort_Folder_Open.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/Sort_Listline.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/Survey.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/SysLeft_bg.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/Thumbs.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/Upload.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/admin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/admin_p.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/arrow.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/bg2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/crm_1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/crm_10.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/crm_11.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/crm_12.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/crm_13.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/crm_14.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/crm_15.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/crm_16.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/crm_17.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/crm_18.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/crm_19.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/crm_2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/crm_20.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/crm_21.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/crm_22.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/crm_23.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/crm_24.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/crm_3.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/crm_4.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/crm_5.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/crm_6.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/crm_7.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/crm_8.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/crm_9.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/css1.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/dot.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/help_icon.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/home.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/left.files/style_left.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/left.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/left.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/left_bg.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/left_menu_bg.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/logo_up.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/menu01.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/menu01_right.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/minus.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/newhead.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/paymentsby_01.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/plus.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/prototype.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/qqonline.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/right.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/spacer.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/style_left.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/syscome.files/Admin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/syscome.files/Admin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/syscome.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/teble_bottom_left.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/teble_bottom_right.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/teble_top_left.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/teble_top_right.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/top_bg.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/top_table_leftbg.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/skin/css/base.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/skin/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/skin/css/menu.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/skin/images/frame/Thumbs.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/skin/images/frame/addnews.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/skin/images/frame/arr3.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/skin/images/frame/arr4.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/skin/images/frame/arrfc.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/skin/images/frame/arrl.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/skin/images/frame/arrr.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/skin/images/frame/book.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/skin/images/frame/book1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/skin/images/frame/bottombg.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/skin/images/frame/file_dir.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/skin/images/frame/gtk-del.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/skin/images/frame/gtk-sadd.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/skin/images/frame/ico_spider.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/skin/images/frame/logo.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/skin/images/frame/manage1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/skin/images/frame/menu-ex.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/skin/images/frame/menu_bg.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/skin/images/frame/menu_bottom.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/skin/images/frame/menu_top.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/skin/images/frame/menuarrow.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/skin/images/frame/menubg.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/skin/images/frame/menumember.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/skin/images/frame/menusearch.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/skin/images/frame/part-index.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/skin/images/frame/qc.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/skin/images/frame/search.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/skin/images/frame/sp_bg.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/skin/images/frame/topbg.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/skin/images/frame/topitembg.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/skin/images/frame/wbg.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/skin/js/frame/menu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/zuikecheng/dao/RoleDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/zuikecheng/dao/RoleDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/zuikecheng/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/zuikecheng/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/zuikecheng/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/zuikecheng/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/zuikecheng/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/zuikecheng/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/zuikecheng/dao/RoleDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/zuikecheng/dao/RoleDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2020-02-10" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/logs/access_log.2020-02-10" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/testSSMStepByStep/org/apache/jsp/_123_jsp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/testSSMStepByStep/org/apache/jsp/_123_jsp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/testSSMStepByStep/org/apache/jsp/_123_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/testSSMStepByStep/org/apache/jsp/_123_jsp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/user-edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/user-edit.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/zuikecheng/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/zuikecheng/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/zuikecheng/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/zuikecheng/dao/UserDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/zuikecheng/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/zuikecheng/service/UserService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/testSSMStepByStep/org/apache/jsp/index_jsp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/testSSMStepByStep/org/apache/jsp/index_jsp.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/testSSMStepByStep/org/apache/jsp/index_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/testSSMStepByStep/org/apache/jsp/index_jsp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/testSSMStepByStep/org/apache/jsp/user_002dlook_jsp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/testSSMStepByStep/org/apache/jsp/user_002dlook_jsp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/testSSMStepByStep/org/apache/jsp/user_002dlook_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/testSSMStepByStep/org/apache/jsp/user_002dlook_jsp.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -51,8 +160,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/zuikecheng/service/UserService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="80" column="25" lean-forward="true" selection-start-line="80" selection-start-column="25" selection-end-line="80" selection-end-column="25" />
+            <state relative-caret-position="905">
+              <caret line="84" selection-start-line="84" selection-end-line="84" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1715#1716#0" expanded="true" />
@@ -69,25 +178,26 @@
                 <element signature="e#2306#2307#0" expanded="true" />
                 <element signature="e#2367#2368#0" expanded="true" />
                 <element signature="e#2418#2419#0" expanded="true" />
+                <element signature="e#2480#2481#0" expanded="true" />
+                <element signature="e#2539#2540#0" expanded="true" />
+                <element signature="e#2678#2679#0" expanded="true" />
+                <element signature="e#2723#2724#0" expanded="true" />
+                <element signature="e#2770#2771#0" expanded="true" />
+                <element signature="e#2819#2820#0" expanded="true" />
+                <element signature="e#2906#2907#0" expanded="true" />
+                <element signature="e#2952#2953#0" expanded="true" />
+                <element signature="e#2898#2899#0" expanded="true" />
+                <element signature="e#2953#2954#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/zuikecheng/utils/Md5.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/zuikecheng/dao/UserDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="51" column="140" selection-start-line="51" selection-start-column="140" selection-end-line="51" selection-end-column="140" />
+            <state relative-caret-position="405">
+              <caret line="58" column="59" selection-start-line="58" selection-start-column="59" selection-end-line="58" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -98,8 +208,31 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="9" column="56" lean-forward="true" selection-start-line="9" selection-start-column="56" selection-end-line="9" selection-end-column="56" />
+            <state relative-caret-position="270">
+              <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/skin/js/frame/menu.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/customer-add.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="115" column="83" selection-start-line="115" selection-start-column="83" selection-end-line="115" selection-end-column="83" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/customer-edit.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="287">
+              <caret line="109" column="17" lean-forward="true" selection-start-line="109" selection-start-column="17" selection-end-line="109" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -107,8 +240,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/zuikecheng/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="189" column="49" selection-start-line="189" selection-start-column="49" selection-end-line="189" selection-end-column="49" />
+            <state relative-caret-position="341">
+              <caret line="263" column="59" selection-start-line="263" selection-start-column="59" selection-end-line="263" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -116,56 +249,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/user-edit.jsp">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/login.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="41" column="87" selection-start-line="41" selection-start-column="77" selection-end-line="41" selection-end-column="87" />
+            <state relative-caret-position="2349">
+              <caret line="88" column="79" selection-start-line="88" selection-start-column="79" selection-end-line="88" selection-end-column="79" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/zuikecheng/controller/CustomerController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/resource.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="81">
-              <caret line="48" column="50" lean-forward="true" selection-start-line="48" selection-start-column="50" selection-end-line="48" selection-end-column="50" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="233">
+              <caret line="157" column="48" selection-start-line="157" selection-start-column="31" selection-end-line="157" selection-end-column="48" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/zuikecheng/dao/RoleDao.java">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/customer-look.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-216">
-              <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/zuikecheng/dao/CustomerDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="29" column="30" selection-start-line="27" selection-start-column="11" selection-end-line="32" selection-end-column="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/user.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="184" column="54" selection-start-line="184" selection-start-column="46" selection-end-line="184" selection-end-column="54" />
+            <state relative-caret-position="500">
+              <caret line="70" selection-start-line="70" selection-end-line="70" />
             </state>
           </provider>
         </entry>
@@ -196,8 +302,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/customer-add.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/customer.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/zuikecheng/service/CustomerService.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/add.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/zuikecheng/bean/Role_Menu.java" />
@@ -237,16 +341,18 @@
         <option value="$PROJECT_DIR$/src/main/java/zuikecheng/dao/RoleDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/zuikecheng/bean/pageBean_User.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/user-add.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/user-edit.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/user-look.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/zuikecheng/controller/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/zuikecheng/service/UserDao.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/user.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/zuikecheng/utils/Md5.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/user-look.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/user-edit.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/login.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/zuikecheng/service/UserService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/zuikecheng/utils/CodeServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/zuikecheng/controller/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/java/zuikecheng/dao/UserDao.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
       </list>
     </option>
   </component>
@@ -409,15 +515,18 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.jscs" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.stylelint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.jscs" value="project" />
     <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.path.for.package.stylelint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.jscs" value="" />
     <property name="node.js.selected.package.standard" value="" />
     <property name="node.js.selected.package.stylelint" value="" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
@@ -452,9 +561,9 @@
       <recent name="bean" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\testSSMStepByStep\src\main\webapp" />
       <recent name="D:\testSSMStepByStep\src\main\webapp\WEB-INF" />
       <recent name="D:\testSSMStepByStep\src\main\java\zuikecheng\bean" />
-      <recent name="D:\testSSMStepByStep\src\main\webapp" />
       <recent name="D:\testSSMStepByStep\src\main\resources" />
       <recent name="D:\testSSMStepByStep\src\main\webapp\WEB-INF\jsp" />
     </key>
@@ -763,12 +872,12 @@
       <workItem from="1579772307278" duration="8930000" />
       <workItem from="1579838593166" duration="1720000" />
       <workItem from="1579865048322" duration="12422000" />
-      <workItem from="1580004675165" duration="264252000" />
+      <workItem from="1580004675165" duration="270333000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="431825000" />
+    <option name="totallyTimeSpent" value="437906000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -781,7 +890,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21558245" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -826,35 +934,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="4545" column="4" selection-start-line="4545" selection-start-column="4" selection-end-line="4545" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/zuikecheng/service/TestService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#179#180#0" expanded="true" />
-            <element signature="e#223#224#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/zuikecheng/dao/TestDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="12" column="66" selection-start-line="12" selection-start-column="66" selection-end-line="12" selection-end-column="66" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/123.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="287">
@@ -956,38 +1035,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/customer-look.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/customer-edit.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="109" column="17" lean-forward="true" selection-start-line="109" selection-start-column="17" selection-end-line="109" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/customer-add.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="115" column="83" selection-start-line="115" selection-start-column="83" selection-end-line="115" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/add.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -1003,13 +1054,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pageBean_User.java">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/role.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="89" column="45" selection-start-line="89" selection-start-column="28" selection-end-line="89" selection-end-column="45" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/zuikecheng/controller/RoleController.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1045,23 +1089,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/customer.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1364">
-          <caret line="111" column="38" selection-start-line="111" selection-start-column="38" selection-end-line="111" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/zuikecheng/controller/testController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="28" column="8" lean-forward="true" selection-start-line="27" selection-start-column="23" selection-end-line="28" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/zuikecheng/service/MenuService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="27">
@@ -1076,32 +1103,6 @@
             <element signature="e#1871#1872#0" expanded="true" />
             <element signature="e#1915#1916#0" expanded="true" />
             <element signature="e#1956#1957#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resource.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="172" column="47" selection-start-line="172" selection-start-column="47" selection-end-line="172" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/user-look.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1728">
-          <caret line="16" column="25" lean-forward="true" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/zuikecheng/service/CustomerService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2185#2186#0" expanded="true" />
-            <element signature="e#2234#2235#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1132,16 +1133,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/zuikecheng/dao/TestDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="15" column="46" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/zuikecheng/dao/RoleDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-216">
@@ -1149,31 +1140,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/zuikecheng/service/TestService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#372#373#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/zuikecheng/utils/Md5.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="9" column="56" lean-forward="true" selection-start-line="9" selection-start-column="56" selection-end-line="9" selection-end-column="56" />
         </state>
       </provider>
     </entry>
@@ -1199,22 +1165,117 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/user.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="184" column="54" selection-start-line="184" selection-start-column="46" selection-end-line="184" selection-end-column="54" />
+        <state relative-caret-position="297">
+          <caret line="185" column="54" selection-start-line="185" selection-start-column="46" selection-end-line="185" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/role.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2808">
+          <caret line="89" column="45" selection-start-line="89" selection-start-column="28" selection-end-line="89" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/user-look.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="87" column="39" selection-start-line="87" selection-start-column="39" selection-end-line="87" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/user-edit.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="41" column="87" selection-start-line="41" selection-start-column="77" selection-end-line="41" selection-end-column="87" />
+        <state relative-caret-position="273">
+          <caret line="161" column="12" lean-forward="true" selection-start-line="161" selection-start-column="12" selection-end-line="161" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/zuikecheng/service/CustomerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-996">
+          <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2185#2186#0" expanded="true" />
+            <element signature="e#2234#2235#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/zuikecheng/service/TestService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#372#373#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/customer.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="96" column="45" selection-start-line="96" selection-start-column="28" selection-end-line="96" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/zuikecheng/dao/TestDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="15" column="46" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/add.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/zuikecheng/controller/testController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="28" column="8" selection-start-line="27" selection-start-column="23" selection-end-line="28" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/zuikecheng/utils/CodeServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="117" column="13" lean-forward="true" selection-start-line="22" selection-start-column="8" selection-end-line="117" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/zuikecheng/utils/Md5.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/zuikecheng/dao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="58" column="59" selection-start-line="58" selection-start-column="59" selection-end-line="58" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/zuikecheng/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="80" column="25" lean-forward="true" selection-start-line="80" selection-start-column="25" selection-end-line="80" selection-end-column="25" />
+        <state relative-caret-position="905">
+          <caret line="84" selection-start-line="84" selection-end-line="84" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1715#1716#0" expanded="true" />
@@ -1231,27 +1292,72 @@
             <element signature="e#2306#2307#0" expanded="true" />
             <element signature="e#2367#2368#0" expanded="true" />
             <element signature="e#2418#2419#0" expanded="true" />
+            <element signature="e#2480#2481#0" expanded="true" />
+            <element signature="e#2539#2540#0" expanded="true" />
+            <element signature="e#2678#2679#0" expanded="true" />
+            <element signature="e#2723#2724#0" expanded="true" />
+            <element signature="e#2770#2771#0" expanded="true" />
+            <element signature="e#2819#2820#0" expanded="true" />
+            <element signature="e#2906#2907#0" expanded="true" />
+            <element signature="e#2952#2953#0" expanded="true" />
+            <element signature="e#2898#2899#0" expanded="true" />
+            <element signature="e#2953#2954#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/zuikecheng/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="189" column="49" selection-start-line="189" selection-start-column="49" selection-end-line="189" selection-end-column="49" />
+        <state relative-caret-position="341">
+          <caret line="263" column="59" selection-start-line="263" selection-start-column="59" selection-end-line="263" selection-end-column="59" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/zuikecheng/dao/UserDao.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/skin/js/frame/menu.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/customer-add.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="51" column="140" selection-start-line="51" selection-start-column="140" selection-end-line="51" selection-end-column="140" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="108">
+          <caret line="115" column="83" selection-start-line="115" selection-start-column="83" selection-end-line="115" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/customer-edit.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="109" column="17" lean-forward="true" selection-start-line="109" selection-start-column="17" selection-end-line="109" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/customer-look.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="70" selection-start-line="70" selection-end-line="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resource.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="157" column="48" selection-start-line="157" selection-start-column="31" selection-end-line="157" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2349">
+          <caret line="88" column="79" selection-start-line="88" selection-start-column="79" selection-end-line="88" selection-end-column="79" />
         </state>
       </provider>
     </entry>
