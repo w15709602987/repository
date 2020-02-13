@@ -225,7 +225,8 @@ public class UserController {
 
         @RequestMapping("login")
         public void login(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+            request.setCharacterEncoding("utf-8");
+            response.setContentType("text/html;charset=utf-8");
             String username = request.getParameter("username");
             String password = Md5.md5(request.getParameter("password"));
 
@@ -233,20 +234,21 @@ public class UserController {
             User user = userService.loginQue(username, password);
             if (user == null) {
                 //不一致，将错误信息存入session,转会到登陆页面
-                request.getSession().setAttribute("msg2", "用户名或者密码错误！");
+                request.getSession().setAttribute("msg", "用户名或者密码错误！");
                 request.getRequestDispatcher("/login.jsp").forward(request, response);
             } else {
                 String R_id = userService.findR_id(username);
-
+                System.out.println("Rid等于"+R_id);
                 //用户登陆时根据角色r_id得到对应的角色名称roleName;
                 String roleName = userService.findRoleName(R_id);
-
+                System.out.println("roleName等于"+roleName);
                 //登陆时根据角色r_id得到对应的权限m_id[],将此数据保存在session中，meanTest取值显示;
                 List<R_id_M_id> M_ids = userService.findM_ids(R_id);
-
+                System.out.println("M_ids等于"+M_ids);
                 request.getSession().setAttribute("M_ids", M_ids);
 
                 List<Menu> menuTest = userService.queMenuAndtoRoleAddjsp();
+                System.out.println("menuTest等于"+menuTest);
                 request.getSession().setAttribute("menuTest", menuTest);
                 request.getSession().setAttribute("roleName", roleName);
 

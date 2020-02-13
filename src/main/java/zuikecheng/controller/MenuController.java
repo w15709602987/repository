@@ -58,8 +58,8 @@ public class MenuController {
         menu.setM_id(m_id);
         menu.setMenuName(menuName);
         menu.setFatherMenuName(fatherMenuName);
-        menu.setRemarks(remarks);
         menu.setMenuPath(menuPath);
+        menu.setRemarks(remarks);
         menu.setState("启用");
 
         //调用业务层向Menu_table表添加数据

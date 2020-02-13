@@ -72,7 +72,7 @@
                         responseContent = xmlHttp.responseText;
                         if(responseContent=='false'){
                             msg.innerHTML='用户名密码错误';
-                            document.getElementById("password").select();
+                            return false;
                         }else if(responseContent=='true'){
                             msg.innerHTML='用户名密码正确';
                         }

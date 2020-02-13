@@ -7,6 +7,7 @@ zuikecheng\service\CustomerService.class
 zuikecheng\service\UserService.class
 zuikecheng\controller\RoleController.class
 zuikecheng\dao\CustomerDao.class
+zuikecheng\utils\CookieUtils.class
 zuikecheng\controller\UserController.class
 zuikecheng\dao\TestDao.class
 zuikecheng\bean\User.class

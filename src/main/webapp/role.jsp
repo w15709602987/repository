@@ -11,7 +11,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
     <title>角色管理</title>
-    <link rel="stylesheet" type="text/css" href="/skin/css/base.css">
+    <link rel="stylesheet" type="text/css" href="/testSSMStepByStep/skin/css/base.css">
 </head>
 
 <script>

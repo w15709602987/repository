@@ -18,7 +18,7 @@ public interface MenuDao {
     @Select("select count(*) from menu where #{conditionName} like concat('%',#{conditionValue},'%')")
      int findCountMenu(@Param("conditionName") String conditionName,@Param("conditionValue") String conditionValue);
 
-    @Insert("insert into menu values(#{menu.m_id},#{menu.menuName},#{menu.fatherMenuName},#{menu.remarks},#{menu.menuPath},#{menu.state})")
+    @Insert("insert into menu values(#{menu.m_id},#{menu.menuName},#{menu.fatherMenuName},#{menu.menuPath},#{menu.remarks},#{menu.state})")
     void addMenu(@Param("menu") Menu menu);
 
     @Update("<script>\n" +
