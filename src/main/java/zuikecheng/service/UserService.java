@@ -98,4 +98,12 @@ public class UserService {
     public List<Menu> queMenuAndtoRoleAddjsp() {
         return userDao.queMenuAndtoRoleAddjsp();
     }
+
+    public boolean findPassword(String username, String password) {
+        List<User> listu = userDao.findUserByUsername(username, password);
+        if (listu.size() != 0) {
+            return true;
+        }
+        return false;
+    }
 }

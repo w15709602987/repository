@@ -2,7 +2,9 @@ package zuikecheng.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import zuikecheng.bean.*;
 import zuikecheng.bean.Menu;
 import zuikecheng.service.UserService;
@@ -15,6 +17,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.List;
 import java.util.Random;
 
@@ -204,11 +207,54 @@ public class UserController {
         request.getSession().setAttribute("userShow",user);
         request.getRequestDispatcher("/user-look.jsp").forward(request,response);
     }
-    @RequestMapping("login")
-    public void login(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        //得到用户输入的username,password,code值
-        String username = request.getParameter("username");
-        String password = Md5.md5(request.getParameter("password"));
+    @Autowired
+    HttpServletResponse response;
+    @RequestMapping("yiBu")
+    public String ajax(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        String username= request.getParameter("username");
+        String password= Md5.md5(request.getParameter("password"));
+        System.out.println(username+password);
+        PrintWriter out = response.getWriter();
+        if(userService.findPassword(username,password)==false) {
+            out.print(false);
+        }else {
+            out.print(true);
+        }
+        return null;
+    }
+
+        @RequestMapping("login")
+        public void login(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+            String username = request.getParameter("username");
+            String password = Md5.md5(request.getParameter("password"));
+
+
+            User user = userService.loginQue(username, password);
+            if (user == null) {
+                //不一致，将错误信息存入session,转会到登陆页面
+                request.getSession().setAttribute("msg2", "用户名或者密码错误！");
+                request.getRequestDispatcher("/login.jsp").forward(request, response);
+            } else {
+                String R_id = userService.findR_id(username);
+
+                //用户登陆时根据角色r_id得到对应的角色名称roleName;
+                String roleName = userService.findRoleName(R_id);
+
+                //登陆时根据角色r_id得到对应的权限m_id[],将此数据保存在session中，meanTest取值显示;
+                List<R_id_M_id> M_ids = userService.findM_ids(R_id);
+
+                request.getSession().setAttribute("M_ids", M_ids);
+
+                List<Menu> menuTest = userService.queMenuAndtoRoleAddjsp();
+                request.getSession().setAttribute("menuTest", menuTest);
+                request.getSession().setAttribute("roleName", roleName);
+
+                // 一致将用户信息存入session,重定向到主页面，
+                request.getSession().setAttribute("user", user);
+                response.sendRedirect("/testSSMStepByStep/index.jsp");
+            }
+        }
 //        String code = request.getParameter("code");
 //
 //        //得到session中存储的code真值
@@ -236,33 +282,7 @@ public class UserController {
         //验证码正确，则需要，将用户名和密码带到数据库中去查询是否一致，
         //不一致，将错误信息存入session,转发到登陆页面
         // 一致将用户信息存入session,重定向到主页面，
-        User user = userService.loginQue(username,password);
-        if (user==null){
-            //不一致，将错误信息存入session,转会到登陆页面
-            request.getSession().setAttribute("msg2","用户名或者密码错误！");
-            request.getRequestDispatcher("/login.jsp").forward(request,response);
-        }else {
-            //username
-            //登陆时根据用户名得到用户的u_id;
-            //用户登陆时根据用户u_id得到对应的角色r_id;-----子查询
-            String R_id = userService.findR_id(username);
 
-            //用户登陆时根据角色r_id得到对应的角色名称roleName;
-            String roleName = userService.findRoleName(R_id);
-
-            //登陆时根据角色r_id得到对应的权限m_id[],将此数据保存在session中，meanTest取值显示;
-            List<R_id_M_id> M_ids = userService.findM_ids(R_id);
-
-            request.getSession().setAttribute("M_ids",M_ids);
-
-            List<Menu> menuTest=userService.queMenuAndtoRoleAddjsp();
-            request.getSession().setAttribute("menuTest",menuTest);
-            request.getSession().setAttribute("roleName",roleName);
-
-            // 一致将用户信息存入session,重定向到主页面，
-            request.getSession().setAttribute("user",user);
-            response.sendRedirect("/testSSMStepByStep/index.jsp");
-        }
     }
 //    @RequestMapping("img")
 //    public void img(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -362,5 +382,3 @@ public class UserController {
 //        int b = fc + random.nextInt(bc - fc);
 //        return new Color(r, g, b);
 //    }
-
-}

@@ -68,6 +68,9 @@ public interface UserDao {
     @Select("select * from menu")
     List<Menu> queMenuAndtoRoleAddjsp();
 
+    @Select("select * from user where username= #{username} and password= #{password} ")
+    List<User> findUserByUsername(@Param("username") String username,@Param("password") String password);
+
 //
 //
 
