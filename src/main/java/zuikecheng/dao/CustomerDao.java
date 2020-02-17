@@ -84,8 +84,8 @@ public interface CustomerDao {
         Object[] args = {"%" + conditionValue + "%", start, pageSize};
         QueryRunner queryRunner = new QueryRunner(C3P0UTil.getDataSource());
         try {
-            List<Customer> list = queryRunner.query(sql, new BeanListHandler<>(Customer.class), args);
-            return list;
+            List<Customer> List = queryRunner.query(sql, new BeanListHandler<>(Customer.class), args);
+            return List;
         } catch (SQLException e) {
             e.printStackTrace();
             throw new RuntimeException(e);//转换为运行时期异常抛出
@@ -162,8 +162,8 @@ public interface CustomerDao {
 
         Object[] args = {"%" + conditionValue + "%"};
         try {
-            List<Customer> list = queryRunner.query(sql, new BeanListHandler<>(Customer.class), args);
-            return list;
+            List<Customer> List = queryRunner.query(sql, new BeanListHandler<>(Customer.class), args);
+            return List;
         } catch (SQLException e) {
             e.printStackTrace();
             throw new RuntimeException(e);//转换为运行时期异常抛出

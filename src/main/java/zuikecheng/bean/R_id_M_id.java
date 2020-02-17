@@ -1,9 +1,18 @@
 package zuikecheng.bean;
+import zuikecheng.bean.Menu;
+import java.util.List;
 
 public class R_id_M_id {
     private String r_id;
     private String m_id;
 
+
+
+    public void setMenus(final List<Menu> menus) {
+        this.menus = menus;
+    }
+
+    private List<Menu> menus;
     public void setR_id(String r_id) {
         this.r_id = r_id;
     }

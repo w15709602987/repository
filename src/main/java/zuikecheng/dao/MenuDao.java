@@ -9,8 +9,7 @@ import java.util.List;
 @Repository
 public interface MenuDao {
 
-    @Select("select * from menu")
-    List<Menu> queMenuAndtoRoleAddjsp();
+
 
     @Select("select * from menu where ${conditionName} like concat('%',#{conditionValue},'%') limit #{start},#{pageSize}")
      List<Menu> queMenu(@Param("start") int start,@Param("pageSize") int pageSize,@Param("conditionName") String conditionName,@Param("conditionValue") String conditionValue);
@@ -27,6 +26,8 @@ public interface MenuDao {
 
     @Select("select * from menu where m_id= #{m_id}")
     Menu menuEdit(@Param("m_id") String m_id);
+    @Select("select * from menu")
+    List<Menu> queMenuAndtoRoleAddjsp();
 
     @Update("update menu set menuName=#{menu.menuName},fatherMenuName=#{menu.fatherMenuName},menuPath=#{menu.menuPath},remarks=#{menu.remarks} where m_id=#{menu.m_id}")
     void updateMenu(@Param("menu") Menu menu);

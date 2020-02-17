@@ -1,12 +1,8 @@
 package zuikecheng.controller;
 
-import org.apache.ibatis.annotations.Param;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
-import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 import zuikecheng.bean.Customer;
 import zuikecheng.bean.PageBean;
 import zuikecheng.service.CustomerService;
@@ -15,7 +11,6 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.sql.Array;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
@@ -245,8 +240,6 @@ public void getCustomers(HttpServletRequest request, HttpServletResponse respons
         for (int i = 0; i < addm; i++) {
             customerList.add(customer);
         }
-        System.out.println(customerList);
-
         customerService.addMany(customerList);
 
         //添加完成后回到客户信息页面，客户信息页面的值是查询数据库得来的；

@@ -1,6 +1,7 @@
 zuikecheng\controller\CustomerController.class
 zuikecheng\bean\Test.class
 zuikecheng\controller\testController.class
+zuikecheng\dao\UserMapper.class
 zuikecheng\controller\MenuController.class
 zuikecheng\bean\Role.class
 zuikecheng\service\CustomerService.class
@@ -21,6 +22,7 @@ zuikecheng\bean\pageBean_User.class
 zuikecheng\dao\RoleDao.class
 zuikecheng\bean\Customer.class
 zuikecheng\service\RoleService.class
+zuikecheng\utils\SqlSessionUtil.class
 zuikecheng\bean\pageBean_Role.class
 zuikecheng\bean\pageBean_Menu.class
 zuikecheng\service\MenuService.class

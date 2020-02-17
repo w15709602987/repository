@@ -1,5 +1,7 @@
 package zuikecheng.bean;
 
+import java.util.List;
+
 public class User {
     private String u_id;
     private String username;
@@ -11,9 +13,18 @@ public class User {
     private String idcard;
     private String remarks;
     private String password;
+    private String roleName;
+    private String r_id;
+    private  List<Menu> Menus;
+    public String getRoleName(User user) {
+        return this.roleName;
+    }
 
+    public void setRoleName(final String roleName) {
+        this.roleName = roleName;
+    }
 
-    public User(String u_id, String username, String position, String gender, int age, String cellphone, String initiationtime, String idcard, String remarks,String password) {
+    public User(String u_id, String username, String position, String gender, int age, String cellphone, String initiationtime, String idcard, String remarks, String password) {
         this.u_id = u_id;
         this.username = username;
         this.position = position;
@@ -24,6 +35,7 @@ public class User {
         this.idcard = idcard;
         this.remarks = remarks;
         this.password = password;
+
     }
 
     public String getU_id() {
@@ -112,5 +124,16 @@ public class User {
     }
 
 
+    public List<Menu> getMenus() {
+        return this.Menus;
+    }
 
+    public void setMenus(final List<Menu> menus) {
+        this.Menus = menus;
+    }
+
+
+    public String getRoleName() {
+        return this.roleName;
+    }
 }

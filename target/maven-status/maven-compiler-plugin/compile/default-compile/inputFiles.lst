@@ -12,12 +12,14 @@ D:\testSSMStepByStep\src\main\java\zuikecheng\service\UserService.java
 D:\testSSMStepByStep\src\main\java\zuikecheng\bean\pageBean_Menu.java
 D:\testSSMStepByStep\src\main\java\zuikecheng\utils\CookieUtils.java
 D:\testSSMStepByStep\src\main\java\zuikecheng\controller\RoleController.java
+D:\testSSMStepByStep\src\main\java\zuikecheng\utils\SqlSessionUtil.java
 D:\testSSMStepByStep\src\main\java\zuikecheng\bean\pageBean_Role.java
 D:\testSSMStepByStep\src\main\java\zuikecheng\controller\UserController.java
 D:\testSSMStepByStep\src\main\java\zuikecheng\dao\TestDao.java
 D:\testSSMStepByStep\src\main\java\zuikecheng\bean\Customer.java
 D:\testSSMStepByStep\src\main\java\zuikecheng\bean\User.java
 D:\testSSMStepByStep\src\main\java\zuikecheng\controller\CustomerController.java
+D:\testSSMStepByStep\src\main\java\zuikecheng\dao\UserMapper.java
 D:\testSSMStepByStep\src\main\java\zuikecheng\service\MenuService.java
 D:\testSSMStepByStep\src\main\java\zuikecheng\bean\Menu.java
 D:\testSSMStepByStep\src\main\java\zuikecheng\service\RoleService.java

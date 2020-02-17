@@ -77,7 +77,7 @@ public class MenuController {
 
         request.getSession().setAttribute("queMenuFatherAndtoMenuAddjsp",list);
         //将页面转到role-add.jsp当页面加载完成时，加载查询玩的Menu表的值，，放在赋菜单资源处！
-       /* for (Menu m:list
+       /* for (Menu m:List
         ) {
             System.out.println(m+"查询到的菜单表");
         }*/

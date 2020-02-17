@@ -2,9 +2,13 @@ package zuikecheng.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import zuikecheng.bean.*;
+import zuikecheng.bean.Menu;
+import zuikecheng.bean.Role;
+import zuikecheng.bean.User;
+import zuikecheng.bean.pageBean_User;
 import zuikecheng.dao.UserDao;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -42,7 +46,7 @@ public class UserService {
         pageBean.setPageSize(pageSize);                //每页显示的记录条数
         pageBean.setTotalCount(totalCount);           //总的记录条数
         pageBean.setTotalPageNume(totalPageNume);    //总的页码数
-        pageBean.setUser(list);                     //查询后的customer的集合*/
+        pageBean.setUser(List);                     //查询后的customer的集合*/
         return pageBeanUser;
     }
 
@@ -79,29 +83,27 @@ public class UserService {
         userDao.UpdateUser_Role(u_id, r_id);
     }
 
+
+
     public User loginQue(String username, String password) {
         return userDao.loginQue(username, password);
+
     }
 
-    public String findR_id(String username) {
-        return userDao.findR_id(username);
-    }
+//    public List findRoleName(String username,String password) {
+//       return userDao.queMenuAndtoRoleAddjsp(username,password);
+//
+//    }
 
-    public String findRoleName(String r_id) {
-        return userDao.findRoleName(r_id);
-    }
+//    public List queMenuAndtoRoleAddjsp(String username,String password) {
+//        return userDao.queMenuAndtoRoleAddjsp(username,password);
+//    }
 
-    public List<R_id_M_id> findM_ids(String r_id) {
-        return userDao.findM_ids(r_id);
-    }
 
-    public List<Menu> queMenuAndtoRoleAddjsp() {
-        return userDao.queMenuAndtoRoleAddjsp();
-    }
 
     public boolean findPassword(String username, String password) {
         List<User> listu = userDao.findUserByUsername(username, password);
-        if (listu.size() != 0) {
+        if (listu.size() == 1) {
             return true;
         }
         return false;
