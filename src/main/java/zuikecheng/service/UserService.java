@@ -1,5 +1,6 @@
 package zuikecheng.service;
 
+import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import zuikecheng.bean.Menu;
@@ -7,6 +8,7 @@ import zuikecheng.bean.Role;
 import zuikecheng.bean.User;
 import zuikecheng.bean.pageBean_User;
 import zuikecheng.dao.UserDao;
+import zuikecheng.utils.SqlSessionUtil;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -86,8 +88,9 @@ public class UserService {
 
 
     public User loginQue(String username, String password) {
+        SqlSession sqlSession = SqlSessionUtil.getSqlSession();
+        UserDao userDao = sqlSession.getMapper(UserDao.class);
         return userDao.loginQue(username, password);
-
     }
 
 //    public List findRoleName(String username,String password) {

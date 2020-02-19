@@ -228,9 +228,8 @@ public class UserController {
         response.setContentType("text/html;charset=utf-8");
         String username = request.getParameter("username");
         String password = Md5.md5(request.getParameter("password"));
-        SqlSession sqlSession = SqlSessionUtil.getSqlSession();
-        UserDao userDao = sqlSession.getMapper(UserDao.class);
-        User u = userDao.loginQue(username, password);
+
+        User u = userService.loginQue(username, password);
 
 //            List<User> users = (List<User>) List.subList(0, 9);
 //            User user = users.get(1);
@@ -245,11 +244,14 @@ public class UserController {
 ////                String roleName = List.get(1).toString("RoleName");
 //                List<String> roleNames = (List<String>)List.subList(13, 13);
             String roleName = u.getRoleName();
-            System.out.println(u);
-            System.out.println(u.getMenus());
-//
-// 登陆时根据角色r_id得到对应的权限m_id[],将此数据保存在session中，meanTest取值显示;
             List<Menu> menuTest = u.getMenus();
+//            for (int i=0;i<u.getMenus().size();i++ ){
+//                if(u.getMenus(i))
+//            }
+//            System.out.println(menuTest.get(1).getMenuName());
+
+// 登陆时根据角色r_id得到对应的权限m_id[],将此数据保存在session中，meanTest取值显示;
+
             request.getSession().setAttribute("menuTest", menuTest);
             request.getSession().setAttribute("roleName", roleName);
 //

@@ -4,8 +4,11 @@ import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
+import zuikecheng.bean.User;
+import zuikecheng.dao.UserMapper;
 
 import java.io.IOException;
+import java.io.Reader;
 
 public class SqlSessionUtil {
     public static SqlSession getSqlSession() {

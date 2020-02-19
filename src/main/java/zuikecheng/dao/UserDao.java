@@ -72,7 +72,7 @@ public interface UserDao {
             @Result(column = "user.remarks", property = "remarks"),
             @Result(column = "password", property = "password"),
             @Result(column = "roleName", property = "roleName"),
-            @Result(column = "user.u_id", property = "Menus", javaType = Menu.class, many = @Many(select = "zuikecheng.dao.UserMapper.getMenus", fetchType = FetchType.EAGER))
+            @Result(column = "roleName", property = "Menus", many = @Many(select = "zuikecheng.dao.UserMapper.getMenusById", fetchType = FetchType.DEFAULT))
     })
     User loginQue(@Param("username")String username, @Param("password") String password);
 //    inner join role_menu on role.r_id=role_menu.r_id inner join menu on role_menu.m_id=menu.m_id

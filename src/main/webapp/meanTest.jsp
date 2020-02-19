@@ -156,15 +156,19 @@
     <tr>
         <td style='padding-left:3px;padding-top:8px' valign="top">
             <c:forEach var="menu" items="${menuTest}">
-                <c:if test="${menu.fatherMenuName=='顶级菜单'&&menu.state=='启用'}">
+                <c:if test="${menu.fatherMenuName=='顶级菜单'}">
+<%--                    <c:if test="${menu.state=='启用'}">--%>
                     <dl class='bitem'>
                         <dt onClick='showHide("items${menu.m_id}__1")'><b>${menu.menuName}</b></dt>
                         <dd style='display:block' class='sitem' id='items${menu.m_id}__1'>
                             <ul class='sitemu'>
+<%--                    </c:if>--%>
                                 <c:set var="father" value="${menu.menuName}" scope="page"></c:set>
                                 <c:forEach var="me" items="${menuTest}">
-                                    <c:if test="${me.fatherMenuName==father&&me.state=='启用'}">
+                                    <c:if test="${me.fatherMenuName==father}">
+<%--                                        <c:if test="${me.state=='启用'}">--%>
                                         <li><a href='${me.menuPath}' target='main'>${me.menuName}</a> </li>
+<%--                                        </c:if>--%>
                                     </c:if>
                                 </c:forEach>
                             </ul>

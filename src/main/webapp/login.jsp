@@ -73,6 +73,7 @@
                         if(responseContent=='false'){
                             msg.innerHTML='用户名密码错误';
                             return false;
+                            parent.location.href='/testSSMStepByStep/login.jsp'
                         }else if(responseContent=='true'){
                             msg.innerHTML='用户名密码正确';
                         }
