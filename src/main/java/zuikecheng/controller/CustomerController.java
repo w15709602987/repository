@@ -78,7 +78,7 @@ public void getCustomers(HttpServletRequest request, HttpServletResponse respons
         //获取用户添加的当前时间；
         String addtime=gettime();
         String modtime=addtime;
-        Customer customer = fromCustomer(customername,companyname,cellphone,companyaddress,addtime,landline,introduction,remarks,modtime);
+        Customer customer = fromCustomer(customername,companyname,cellphone,addtime,companyaddress,landline,introduction,remarks,modtime);
 
         //由Service层来调用方法
 

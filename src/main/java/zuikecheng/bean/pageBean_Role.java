@@ -2,7 +2,7 @@ package zuikecheng.bean;
 
 import java.util.List;
 
-public class pageBean_Role {
+public class pageBean_Role implements Page{
     private int pageNum;
     private int pageSize;
     private int totalCount;
@@ -45,6 +45,11 @@ public class pageBean_Role {
         this.conditionValue = conditionValue;
     }
 
+    @Override
+    public void setOrderByMethod(String orderByMethod) {
+
+    }
+
     public void setList(List<Role> list) {
         this.list = list;
     }
@@ -71,6 +76,11 @@ public class pageBean_Role {
 
     public String getConditionValue() {
         return conditionValue;
+    }
+
+    @Override
+    public String getOrderByMethod() {
+        return null;
     }
 
     public List<Role> getList() {

@@ -9,8 +9,6 @@ import java.util.List;
 @Repository
 public interface MenuDao {
 
-
-
     @Select("select * from menu where ${conditionName} like concat('%',#{conditionValue},'%') limit #{start},#{pageSize}")
      List<Menu> queMenu(@Param("start") int start,@Param("pageSize") int pageSize,@Param("conditionName") String conditionName,@Param("conditionValue") String conditionValue);
 
@@ -33,8 +31,8 @@ public interface MenuDao {
     void updateMenu(@Param("menu") Menu menu);
 
     @Delete("delete from menu where m_id= #{m_id}")
-    void delMenu(String m_id);
+    void delMenu(@Param("m_id") String m_id);
 
     @Delete("delete from role_menu where m_id= #{m_id}")
-    void delRoleMenu(String m_id);
+    void delRoleMenu(@Param("m_id")String m_id);
 }

@@ -31,7 +31,7 @@ public class ControllerUtil {
         return time;
     }
 
-    public static Customer fromCustomer(String customername, String companyname, String addtime, String cellphone, String companyaddress, String landline, String introduction, String remarks, String modtime) {
+    public static Customer fromCustomer(String customername, String companyname,String cellphone, String addtime, String companyaddress, String landline, String introduction, String remarks, String modtime) {
         Customer customer = new Customer();
         customer.setCustomername(customername);
         customer.setCompanyname(companyname);

@@ -8,31 +8,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c8f1c2f3-3b58-4515-8981-cf62e7381f08" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/zuikecheng/bean/Page.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/zuikecheng/utils/ControllerUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/zuikecheng/utils/SerializeUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/zuikecheng/bean/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/zuikecheng/bean/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/zuikecheng/bean/PageBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/zuikecheng/bean/PageBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/zuikecheng/bean/Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/zuikecheng/bean/Page.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/zuikecheng/bean/pageBean_Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/zuikecheng/bean/pageBean_Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/zuikecheng/bean/pageBean_Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/zuikecheng/bean/pageBean_Role.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/zuikecheng/bean/pageBean_User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/zuikecheng/bean/pageBean_User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/zuikecheng/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/zuikecheng/controller/CustomerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/zuikecheng/controller/MenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/zuikecheng/controller/MenuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/zuikecheng/controller/RoleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/zuikecheng/controller/RoleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/zuikecheng/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/zuikecheng/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/zuikecheng/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/zuikecheng/service/CustomerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/zuikecheng/bean/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/zuikecheng/bean/Customer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/zuikecheng/bean/PageBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/zuikecheng/bean/PageBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/zuikecheng/bean/pageBean_Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/zuikecheng/bean/pageBean_Menu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/zuikecheng/controller/CustomerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/zuikecheng/controller/CustomerController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/zuikecheng/controller/MenuController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/zuikecheng/controller/MenuController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/zuikecheng/controller/RoleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/zuikecheng/controller/RoleController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/zuikecheng/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/zuikecheng/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/zuikecheng/service/CustomerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/zuikecheng/service/CustomerService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2020-02-19" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/logs/access_log.2020-02-19" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/zuikecheng/dao/MenuDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/zuikecheng/dao/MenuDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/zuikecheng/utils/ControllerUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/zuikecheng/utils/ControllerUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/zuikecheng/utils/SerializeUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/zuikecheng/utils/SerializeUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2020-02-25" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/logs/access_log.2020-02-25" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -50,8 +34,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/zuikecheng/controller/CustomerController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="82">
-              <caret line="46" selection-start-line="46" selection-end-line="46" />
+            <state relative-caret-position="271">
+              <caret line="80" column="84" selection-start-line="80" selection-start-column="84" selection-end-line="80" selection-end-column="84" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -60,71 +44,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/zuikecheng/bean/PageBean.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/zuikecheng/dao/MenuDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-243">
-              <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
-              <folding>
-                <element signature="e#398#399#0" expanded="true" />
-                <element signature="e#448#449#0" expanded="true" />
-                <element signature="e#508#509#0" expanded="true" />
-                <element signature="e#560#561#0" expanded="true" />
-                <element signature="e#618#619#0" expanded="true" />
-                <element signature="e#668#669#0" expanded="true" />
-                <element signature="e#708#709#0" expanded="true" />
-                <element signature="e#744#745#0" expanded="true" />
-                <element signature="e#785#786#0" expanded="true" />
-                <element signature="e#822#823#0" expanded="true" />
-                <element signature="e#862#863#0" expanded="true" />
-                <element signature="e#898#899#0" expanded="true" />
-                <element signature="e#1025#1026#0" expanded="true" />
-                <element signature="e#1063#1064#0" expanded="true" />
-                <element signature="e#1108#1109#0" expanded="true" />
-                <element signature="e#1148#1149#0" expanded="true" />
-                <element signature="e#1197#1198#0" expanded="true" />
-                <element signature="e#1241#1242#0" expanded="true" />
-                <element signature="e#1296#1297#0" expanded="true" />
-                <element signature="e#1346#1347#0" expanded="true" />
-                <element signature="e#1404#1405#0" expanded="true" />
-                <element signature="e#1446#1447#0" expanded="true" />
-                <element signature="e#1477#1478#0" expanded="true" />
-                <element signature="e#1507#1508#0" expanded="true" />
-                <element signature="e#1539#1540#0" expanded="true" />
-                <element signature="e#1570#1571#0" expanded="true" />
-                <element signature="e#1604#1605#0" expanded="true" />
-                <element signature="e#1637#1638#0" expanded="true" />
-                <element signature="e#1674#1675#0" expanded="true" />
-                <element signature="e#1710#1711#0" expanded="true" />
-                <element signature="e#1754#1755#0" expanded="true" />
-                <element signature="e#1786#1787#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="455">
+              <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/zuikecheng/utils/SqlSessionUtil.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/zuikecheng/dao/RoleDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="13" column="46" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/zuikecheng/bean/pageBean_Menu.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="31" column="56" lean-forward="true" selection-start-line="31" selection-start-column="56" selection-end-line="31" selection-end-column="56" />
-              <folding>
-                <element signature="e#1450#1451#0" expanded="true" />
-                <element signature="e#1477#1478#0" expanded="true" />
-                <element signature="e#1685#1686#0" expanded="true" />
-                <element signature="e#1712#1713#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-459">
+              <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -132,8 +64,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/zuikecheng/service/CustomerService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="31">
-              <caret line="31" column="55" lean-forward="true" selection-start-line="31" selection-start-column="55" selection-end-line="31" selection-end-column="55" />
+            <state relative-caret-position="108">
+              <caret line="29" column="7" lean-forward="true" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -142,22 +74,23 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/zuikecheng/utils/Md5.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/zuikecheng/bean/pageBean_Role.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="8" column="4" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="41" />
+            <state relative-caret-position="999">
+              <caret line="49" selection-start-line="49" selection-end-line="49" />
+              <folding>
+                <element signature="e#1941#1942#0" expanded="true" />
+                <element signature="e#1968#1969#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/zuikecheng/utils/ControllerUtil.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/zuikecheng/bean/pageBean_User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="479">
-              <caret line="76" column="20" selection-start-line="76" selection-start-column="20" selection-end-line="76" selection-end-column="20" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="-855">
+              <caret line="5" column="36" lean-forward="true" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -165,7 +98,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/zuikecheng/dao/CustomerDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
+            <state relative-caret-position="270">
               <caret line="14" selection-start-line="14" selection-end-line="14" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -174,20 +107,32 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/zuikecheng/bean/Page.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/zuikecheng/utils/SerializeUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-244">
-              <caret line="15" column="3" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
+            <state relative-caret-position="11">
+              <caret line="51" column="17" lean-forward="true" selection-start-line="51" selection-start-column="17" selection-end-line="51" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/zuikecheng/utils/SerializeUtil.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/zuikecheng/utils/CookieUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="671">
-              <caret line="64" lean-forward="true" selection-start-line="64" selection-end-line="64" />
+            <state relative-caret-position="189">
+              <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/zuikecheng/utils/ControllerUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="101">
+              <caret line="33" column="98" selection-start-line="33" selection-start-column="98" selection-end-line="33" selection-end-column="98" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -231,7 +176,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/top.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/main.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/role.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/zuikecheng/dao/MenuDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/zuikecheng/mapper/LoginMapper.tld" />
         <option value="$PROJECT_DIR$/src/main/java/zuikecheng/bean/T.java" />
         <option value="$PROJECT_DIR$/src/main/java/zuikecheng/bean/list.java" />
@@ -256,18 +200,19 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/zuikecheng/utils/afe.java" />
         <option value="$PROJECT_DIR$/src/main/java/zuikecheng/utils/CustomerUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/zuikecheng/controller/CustomerController.java" />
         <option value="$PROJECT_DIR$/src/main/java/zuikecheng/controller/MenuController.java" />
         <option value="$PROJECT_DIR$/src/main/java/zuikecheng/controller/UserController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/zuikecheng/utils/ControllerUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/zuikecheng/controller/RoleController.java" />
         <option value="$PROJECT_DIR$/src/main/java/zuikecheng/bean/Customer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/zuikecheng/bean/pageBean_User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/zuikecheng/bean/pageBean_Role.java" />
-        <option value="$PROJECT_DIR$/src/main/java/zuikecheng/bean/Page.java" />
         <option value="$PROJECT_DIR$/src/main/java/zuikecheng/bean/PageBean.java" />
-        <option value="$PROJECT_DIR$/src/main/java/zuikecheng/bean/pageBean_Menu.java" />
         <option value="$PROJECT_DIR$/src/main/java/zuikecheng/service/CustomerService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/zuikecheng/bean/Page.java" />
+        <option value="$PROJECT_DIR$/src/main/java/zuikecheng/bean/pageBean_Menu.java" />
+        <option value="$PROJECT_DIR$/src/main/java/zuikecheng/bean/pageBean_Role.java" />
+        <option value="$PROJECT_DIR$/src/main/java/zuikecheng/bean/pageBean_User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/zuikecheng/dao/MenuDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/zuikecheng/utils/ControllerUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/zuikecheng/controller/CustomerController.java" />
         <option value="$PROJECT_DIR$/src/main/java/zuikecheng/utils/SerializeUtil.java" />
       </list>
     </option>
@@ -794,12 +739,12 @@
       <workItem from="1581732334182" duration="68386000" />
       <workItem from="1581985818939" duration="36357000" />
       <workItem from="1582104288913" duration="46676000" />
-      <workItem from="1582420142443" duration="44673000" />
+      <workItem from="1582420142443" duration="50801000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="703784000" />
+    <option name="totallyTimeSpent" value="709912000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -823,7 +768,7 @@
       <window_info id="Image Layers" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49924356" weight="0.32427844" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.897882" visible="true" weight="0.050933786" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.897882" visible="true" weight="0.8743633" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -856,13 +801,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.5/mybatis-3.4.5-sources.jar!/org/apache/ibatis/io/ClassLoaderWrapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="119" column="36" lean-forward="true" selection-start-line="119" selection-start-column="36" selection-end-line="119" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_151/src.zip!/java/lang/ClassLoader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="41">
@@ -896,13 +834,6 @@
             <element signature="imports" expanded="true" />
             <element signature="e#372#373#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/zuikecheng/dao/MenuDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -1034,13 +965,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/zuikecheng/utils/CookieUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/zuikecheng/bean/Role.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="296">
@@ -1140,41 +1064,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/zuikecheng/bean/pageBean_User.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/zuikecheng/utils/SqlSessionUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/zuikecheng/bean/pageBean_Role.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/zuikecheng/dao/CustomerDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="135">
+          <caret line="13" column="46" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/zuikecheng/utils/Md5.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="8" column="4" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/zuikecheng/bean/pageBean_Menu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="e#1685#1686#0" expanded="true" />
+            <element signature="e#1712#1713#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/zuikecheng/bean/Page.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-244">
-          <caret line="15" column="3" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
+        <state relative-caret-position="648">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/zuikecheng/bean/PageBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-243">
-          <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
+        <state relative-caret-position="1566">
+          <caret line="82" column="5" lean-forward="true" selection-start-line="82" selection-start-column="5" selection-end-line="82" selection-end-column="5" />
           <folding>
             <element signature="e#398#399#0" expanded="true" />
             <element signature="e#448#449#0" expanded="true" />
@@ -1212,33 +1140,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/zuikecheng/bean/pageBean_Menu.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/zuikecheng/bean/pageBean_Role.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="31" column="56" lean-forward="true" selection-start-line="31" selection-start-column="56" selection-end-line="31" selection-end-column="56" />
+        <state relative-caret-position="999">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
           <folding>
-            <element signature="e#1450#1451#0" expanded="true" />
-            <element signature="e#1477#1478#0" expanded="true" />
-            <element signature="e#1685#1686#0" expanded="true" />
-            <element signature="e#1712#1713#0" expanded="true" />
+            <element signature="e#1941#1942#0" expanded="true" />
+            <element signature="e#1968#1969#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/zuikecheng/utils/ControllerUtil.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/zuikecheng/bean/pageBean_User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="479">
-          <caret line="76" column="20" selection-start-line="76" selection-start-column="20" selection-end-line="76" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="-855">
+          <caret line="5" column="36" lean-forward="true" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/zuikecheng/utils/SqlSessionUtil.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/zuikecheng/dao/MenuDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="13" column="46" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
+        <state relative-caret-position="455">
+          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/zuikecheng/dao/RoleDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-459">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/zuikecheng/utils/CookieUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/zuikecheng/service/CustomerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="29" column="7" lean-forward="true" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1247,35 +1191,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/zuikecheng/controller/CustomerController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
-          <caret line="46" selection-start-line="46" selection-end-line="46" />
+        <state relative-caret-position="271">
+          <caret line="80" column="84" selection-start-line="80" selection-start-column="84" selection-end-line="80" selection-end-column="84" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/zuikecheng/service/CustomerService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/zuikecheng/utils/ControllerUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="31">
-          <caret line="31" column="55" lean-forward="true" selection-start-line="31" selection-start-column="55" selection-end-line="31" selection-end-column="55" />
+        <state relative-caret-position="101">
+          <caret line="33" column="98" selection-start-line="33" selection-start-column="98" selection-end-line="33" selection-end-column="98" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/zuikecheng/utils/Md5.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/zuikecheng/dao/CustomerDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="8" column="4" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="41" />
+        <state relative-caret-position="270">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/zuikecheng/utils/SerializeUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="671">
-          <caret line="64" lean-forward="true" selection-start-line="64" selection-end-line="64" />
+        <state relative-caret-position="11">
+          <caret line="51" column="17" lean-forward="true" selection-start-line="51" selection-start-column="17" selection-end-line="51" selection-end-column="17" />
         </state>
       </provider>
     </entry>

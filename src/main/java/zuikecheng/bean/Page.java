@@ -25,8 +25,6 @@ public interface Page {
 
     public void setTotalPageNume(int totalPageNume);
 
-    public void setCustomers(List<Customer> customers);
-
     public int getPageNum();
 
     public int getPageSize();
@@ -35,5 +33,4 @@ public interface Page {
 
     public int getTotalPageNume();
 
-    public List<Customer> getCustomers();
 }

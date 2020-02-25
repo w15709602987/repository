@@ -5,6 +5,7 @@ import java.io.ByteArrayInputStream;
  import java.io.ByteArrayOutputStream;
  import java.io.ObjectInputStream;
  import java.io.ObjectOutputStream;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Set;
 
@@ -47,7 +48,7 @@ import java.util.Set;
         public static Object unserialize(Set<byte[]> bytes){
             ByteArrayInputStream bais = null;
             ObjectInputStream ois = null;
-            List list = null;
+            List list = new LinkedList();
             try {
 
                 for (byte[] b : bytes) {
@@ -55,8 +56,8 @@ import java.util.Set;
                     ois = new ObjectInputStream(bais);
                     list.add(ois.readObject());
                 }
-
-
+                ois.close();
+                bais.close();
                 return list;
             }catch(Exception e){
                 e.printStackTrace();
