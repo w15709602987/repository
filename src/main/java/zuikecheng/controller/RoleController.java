@@ -14,6 +14,8 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
+import static zuikecheng.utils.ControllerUtil.fromRole;
+
 @Controller
 public class RoleController {
     @Autowired
@@ -82,11 +84,8 @@ public class RoleController {
         String[] m_id = request.getParameterValues("menu");
 
         //封装Role的数据
-        Role role = new Role();
-        role.setR_id(r_id);
-        role.setRoleName(roleName);
-        role.setState(state);
-        role.setRemarks(remarks);
+        Role role = fromRole(r_id,roleName,state,remarks);
+
 
 
 
@@ -162,11 +161,7 @@ public class RoleController {
         String roleName = request.getParameter("roleName");
         String state = request.getParameter("state");
         String remarks = request.getParameter("remarks");
-        Role role = new Role();
-        role.setR_id(r_id);
-        role.setRoleName(roleName);
-        role.setState(state);
-        role.setRemarks(remarks);
+        Role role = fromRole(r_id,roleName,state,remarks);
         //调用service业务层去修改
         //编辑修改角色表信息
         roleService.UpdateRole(role);

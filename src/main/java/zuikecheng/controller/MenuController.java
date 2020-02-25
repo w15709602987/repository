@@ -12,6 +12,8 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
+import static zuikecheng.utils.ControllerUtil.fromMenu;
+
 @Controller
 public class MenuController {
     @Autowired
@@ -54,12 +56,7 @@ public class MenuController {
         String menuPath= request.getParameter("menuPath");
         String remarks= request.getParameter("remarks");
         //将数据分装到Menu对象中；
-        Menu menu = new Menu();
-        menu.setM_id(m_id);
-        menu.setMenuName(menuName);
-        menu.setFatherMenuName(fatherMenuName);
-        menu.setMenuPath(menuPath);
-        menu.setRemarks(remarks);
+        Menu menu = fromMenu(m_id,menuName,fatherMenuName,menuPath,remarks);
         menu.setState("启用");
 
         //调用业务层向Menu_table表添加数据
@@ -126,12 +123,7 @@ public class MenuController {
         String remarks= request.getParameter("remarks");
 
         //将数据分装到Menu对象中；
-        Menu menu = new Menu();
-        menu.setM_id(m_id);
-        menu.setMenuName(menuName);
-        menu.setFatherMenuName(fatherMenuName);
-        menu.setRemarks(remarks);
-        menu.setMenuPath(menuPath);
+        Menu menu = fromMenu(m_id,menuName,fatherMenuName,menuPath,remarks);
 
         //调用业务层向Menu_table表修改更新数据
         menuService.updateMenu(menu);

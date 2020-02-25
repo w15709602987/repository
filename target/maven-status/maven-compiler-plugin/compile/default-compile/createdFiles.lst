@@ -3,10 +3,12 @@ zuikecheng\bean\Test.class
 zuikecheng\controller\testController.class
 zuikecheng\dao\UserMapper.class
 zuikecheng\controller\MenuController.class
+zuikecheng\bean\Page.class
 zuikecheng\bean\Role.class
 zuikecheng\service\CustomerService.class
 zuikecheng\service\UserService.class
 zuikecheng\controller\RoleController.class
+zuikecheng\utils\ControllerUtil.class
 zuikecheng\dao\CustomerDao.class
 zuikecheng\utils\CookieUtils.class
 zuikecheng\controller\UserController.class
@@ -25,6 +27,7 @@ zuikecheng\service\RoleService.class
 zuikecheng\utils\SqlSessionUtil.class
 zuikecheng\bean\pageBean_Role.class
 zuikecheng\bean\pageBean_Menu.class
+zuikecheng\utils\SerializeUtil.class
 zuikecheng\service\MenuService.class
 zuikecheng\bean\Menu.class
 zuikecheng\service\TestService.class

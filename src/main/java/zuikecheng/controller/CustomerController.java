@@ -14,6 +14,9 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
+import static zuikecheng.utils.ControllerUtil.fromCustomer;
+import static zuikecheng.utils.ControllerUtil.gettime;
+
 
 @Controller
 public class CustomerController {
@@ -73,40 +76,9 @@ public void getCustomers(HttpServletRequest request, HttpServletResponse respons
         String introduction = request.getParameter("introduction");
         String remarks = request.getParameter("remarks");
         //获取用户添加的当前时间；
-        Calendar c = Calendar.getInstance(Locale.CHINA);//默认是当前日期
-        // 获得年份
-        int year = c.get(Calendar.YEAR)-1900;
-        // 获得月份
-        int month = c.get(Calendar.MONTH);
-        // 获得日期
-        int date = c.get(Calendar.DATE);
-        //获得小时,并换算成北京时间
-        int h=c.get(Calendar.HOUR_OF_DAY);
-        //获得分钟
-        int mi=c.get(Calendar.MINUTE);
-        //获得秒
-        int s=c.get(Calendar.SECOND);
-
-        //将获得的参数添加到addtime中；
-        java.util.Date at = new java.util.Date(year,month,date,h,mi,s);
-
-        SimpleDateFormat sdf2= new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-
-        String addtime=sdf2.format(at);
-
-        //在添加过程中，添加时间==修改时间
-        java.util.Date modtime = new java.util.Date(year,month,date,h,mi,s);
-
-        Customer customer = new Customer();
-        customer.setCustomername(customername);
-        customer.setCompanyname(companyname);
-        customer.setAddtime(addtime);
-        customer.setCellphone(cellphone);
-        customer.setCompanyaddress(companyaddress);
-        customer.setLandline(landline);
-        customer.setIntroduction(introduction);
-        customer.setRemarks(remarks);
-        customer.setModtime(modtime);
+        String addtime=gettime();
+        String modtime=addtime;
+        Customer customer = fromCustomer(customername,companyname,cellphone,companyaddress,addtime,landline,introduction,remarks,modtime);
 
         //由Service层来调用方法
 
@@ -147,18 +119,7 @@ public void getCustomers(HttpServletRequest request, HttpServletResponse respons
         String introduction = request.getParameter("introduction");
         String remarks = request.getParameter("remarks");
 
-        Calendar c = Calendar.getInstance(Locale.CHINA);
-        int year = c.get(Calendar.YEAR)-1900;
-        int month = c.get(Calendar.MONTH);
-        int date = c.get(Calendar.DATE);
-        //获得小时
-        int h=c.get(Calendar.HOUR_OF_DAY);
-        //获得分钟
-        int mi=c.get(Calendar.MINUTE);
-        //获得秒
-        int s=c.get(Calendar.SECOND);
-
-        java.util.Date modtime = new java.util.Date(year,month,date,h,mi,s);
+        String modtime = gettime();
         Customer customer = new Customer();
         customer.setCustomername(customername);
         customer.setCompanyname(companyname);
@@ -201,41 +162,14 @@ public void getCustomers(HttpServletRequest request, HttpServletResponse respons
         String remarks = request.getParameter("remarks");
         int addm = Integer.parseInt(request.getParameter("addm"));
 
-        //获取用户添加的当前时间；
-        Calendar c = Calendar.getInstance(Locale.CHINA);//默认是当前日期
-        // 获得年份
-        int year = c.get(Calendar.YEAR) - 1900;
-        // 获得月份
-        int month = c.get(Calendar.MONTH);
-        // 获得日期
-        int date = c.get(Calendar.DATE);
-        //获得小时,并换算成北京时间
-        int h = c.get(Calendar.HOUR_OF_DAY);
-        //获得分钟
-        int mi = c.get(Calendar.MINUTE);
-        //获得秒
-        int s = c.get(Calendar.SECOND);
 
-        //将获得的参数添加到addtime中；
-        java.util.Date at = new java.util.Date(year, month, date, h, mi, s);
 
-        SimpleDateFormat sdf2 = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-
-        String addtime = sdf2.format(at);
+        String addtime = gettime();
 
         //在添加过程中，添加时间==修改时间
-        java.util.Date modtime = new java.util.Date(year, month, date, h, mi, s);
+        String modtime =addtime;
 
-        Customer customer = new Customer();
-        customer.setCustomername(customername);
-        customer.setCompanyname(companyname);
-        customer.setAddtime(addtime);
-        customer.setCellphone(cellphone);
-        customer.setCompanyaddress(companyaddress);
-        customer.setLandline(landline);
-        customer.setIntroduction(introduction);
-        customer.setRemarks(remarks);
-        customer.setModtime(modtime);
+        Customer customer = fromCustomer(customername,companyname,cellphone,companyaddress,addtime,landline,introduction,remarks,modtime);
         List<Customer> customerList=new ArrayList<>();
         for (int i = 0; i < addm; i++) {
             customerList.add(customer);

@@ -18,6 +18,8 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.List;
 
+import static zuikecheng.utils.ControllerUtil.fromUser;
+
 @Controller
 public class UserController {
     @Autowired
@@ -81,15 +83,7 @@ public class UserController {
         String r_id = request.getParameter("role");
 
         //封装User的数据
-        User user = new User();
-        user.setPosition(position);
-        user.setUsername(userName);
-        user.setGender(gender);
-        user.setAge(age);
-        user.setCellphone(cellPhone);
-        user.setInitiationtime(addTime);
-        user.setIdcard(idCard);
-        user.setRemarks(remarks);
+        User user = fromUser(position,userName,gender,age,cellPhone,addTime,idCard,remarks,u_id);
 
         //默认密码六个六  //666666
         user.setPassword(Md5.md5("666666"));
@@ -169,16 +163,8 @@ public class UserController {
         String remarks = request.getParameter("remarks");
 
         //封装User的数据
-        User user = new User();
-        user.setPosition(position);
-        user.setUsername(userName);
-        user.setGender(gender);
-        user.setAge(age);
-        user.setCellphone(cellPhone);
-        user.setInitiationtime(addTime);
-        user.setIdcard(idCard);
-        user.setRemarks(remarks);
-        user.setU_id(u_id);
+        User user = fromUser(position,userName,gender,age,cellPhone,addTime,idCard,remarks,u_id);
+
 
         //调用service业务层去添加
         userService.Update(user);

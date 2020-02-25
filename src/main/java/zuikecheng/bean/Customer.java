@@ -1,13 +1,14 @@
 package zuikecheng.bean;
 
 
-import java.util.Date;
-public class Customer {
+import java.io.Serializable;
+
+public class Customer  implements Serializable {
     private int id;
     private String customername;
     private String companyname;
     private String addtime;
-    private Date modtime;
+    private String modtime;
     private String cellphone;
     private String companyaddress;
     private String landline;
@@ -15,11 +16,11 @@ public class Customer {
     private String remarks;
 
 
-    public void setModtime(Date modtime) {
+    public void setModtime(String modtime) {
         this.modtime = modtime;
     }
 
-    public Date getModtime() {
+    public String getModtime() {
         return modtime;
     }
 

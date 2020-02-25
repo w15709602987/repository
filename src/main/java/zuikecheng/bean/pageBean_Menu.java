@@ -2,7 +2,7 @@ package zuikecheng.bean;
 
 import java.util.List;
 
-public class pageBean_Menu {
+public class pageBean_Menu implements Page {
 
     private int pageNum;
     private int pageSize;
@@ -28,12 +28,22 @@ public class pageBean_Menu {
         this.totalPageNume = totalPageNume;
     }
 
+    @Override
+    public void setCustomers(List<Customer> customers) {
+
+    }
+
     public void setConditionName(String conditionName) {
         this.conditionName = conditionName;
     }
 
     public void setConditionValue(String conditionValue) {
         this.conditionValue = conditionValue;
+    }
+
+    @Override
+    public void setOrderByMethod(String orderByMethod) {
+
     }
 
     public void setList(List<Menu> list) {
@@ -56,12 +66,22 @@ public class pageBean_Menu {
         return totalPageNume;
     }
 
+    @Override
+    public List<Customer> getCustomers() {
+        return null;
+    }
+
     public String getConditionName() {
         return conditionName;
     }
 
     public String getConditionValue() {
         return conditionValue;
+    }
+
+    @Override
+    public String getOrderByMethod() {
+        return null;
     }
 
     public List<Menu> getList() {

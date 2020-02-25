@@ -3,7 +3,7 @@ package zuikecheng.bean;
 import java.util.List;
 
 //存放分页查询的数据
-public class PageBean {
+public class PageBean implements Page{
     private int pageNum;    //当前页的页码
     private int pageSize;   //每一页所显示的记录条数
     private int totalCount; //总的数据条数
